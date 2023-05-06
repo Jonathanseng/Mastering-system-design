@@ -4,3 +4,39 @@ A condensed version of the OSI model that uses 4 layers and references to how th
 2: Internet Layer 
 3: Transport Layer 
 4: Application Layer
+
+How tcp ip model work?
+
+The TCP/IP (Transmission Control Protocol/Internet Protocol) model is a networking protocol stack that defines a set of rules and procedures for communication between devices on a network. It consists of four layers: the application layer, transport layer, network layer, and link layer. Each layer is responsible for performing specific tasks related to the transmission of data between devices.
+
+Here is a brief overview of how each layer works:
+
+Application Layer: The application layer is responsible for providing network services to applications running on a device. It defines protocols such as HTTP, FTP, SMTP, and Telnet, which are used by applications to communicate with other devices on the network.
+
+Transport Layer: The transport layer is responsible for ensuring reliable data transmission between devices. It defines protocols such as TCP and UDP, which are used to establish connections, transmit data, and manage flow control and error recovery.
+
+Network Layer: The network layer is responsible for routing data between devices on different networks. It defines the Internet Protocol (IP), which is used to identify devices and route data packets between them.
+
+Link Layer: The link layer is responsible for transmitting data between devices on the same network. It defines protocols such as Ethernet and Wi-Fi, which are used to establish physical connections between devices and transmit data packets.
+
+The TCP/IP model is designed to be flexible and scalable, allowing it to be used in a wide variety of network environments. It is the most widely used networking protocol stack in the world, and is the foundation of the Internet and many other computer networks.
+
+In summary, the TCP/IP model defines a set of protocols and procedures that enable reliable communication between devices on a network, and it is organized into layers that each perform specific tasks related to the transmission of data.
+
+tcp ip model and its application
+
+The TCP/IP (Transmission Control Protocol/Internet Protocol) model is used for communication between devices on a network, and it is used in a variety of applications, including:
+
+Internet communication: The TCP/IP model is the basis of the Internet, allowing computers and other devices to communicate with each other across the world.
+
+Email: The Simple Mail Transfer Protocol (SMTP) and Post Office Protocol (POP) are application layer protocols that use TCP/IP to send and receive email messages.
+
+File transfer: The File Transfer Protocol (FTP) uses TCP/IP to transfer files between devices on a network.
+
+Remote login: Telnet is an application layer protocol that uses TCP/IP to allow a user to log in to a remote device and control it from another location.
+
+Voice and video communication: The Real-time Transport Protocol (RTP) and Real-time Control Protocol (RTCP) are application layer protocols that use TCP/IP to enable voice and video communication over the Internet.
+
+Network management: The Simple Network Management Protocol (SNMP) is an application layer protocol that uses TCP/IP to manage and monitor devices on a network.
+
+The TCP/IP model is widely used in networking applications because it provides a flexible and scalable framework for communication between devices. It is used in a variety of industries, including telecommunications, finance, healthcare, and more.
