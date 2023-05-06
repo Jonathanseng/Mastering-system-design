@@ -1,0 +1,2 @@
+Volatile memory (data is erased when power is switched off) that is used by the computer processor to store data for short- term / temporarily.
+It is faster to read and write to RAM than to disk.
