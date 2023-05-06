@@ -1,0 +1,3 @@
+A set of rules in the Transport layer of TCP/IP that ensure
+reliable transmission of data between computer nodes.
+It is a connection-oriented protocol that makes sure that a reliable connection is established between the sender/client and receiver/server nodes before any data packets can be sent.
