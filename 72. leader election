@@ -1,0 +1,2 @@
+For a group of computer nodes performing a specific task, it is the process of designating a single node to be the primary coordinator/supervisor responsible for the task.
+A leader election consensus algorithm is used by all nodes in a multi-node system to communicate with each other and elect a single leader node.
