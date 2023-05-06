@@ -1,0 +1,4 @@
+Availability is measured in nines (9).
+A system with 90% availability (‘one nine’) will have a downtime of 36.53 days per year.
+A system with 99% availability (‘two nines’) will have a downtime of 3.65 days per year.
+A highly available system is defined as one with an availability of 99.999% (‘five nines’) or more with a downtime of 5.26 minutes per year.
