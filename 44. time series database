@@ -1,0 +1,2 @@
+A database that is optimized to store and analyze time series data.
+Popular time-series databases are Prometheus & InfluxDB.
