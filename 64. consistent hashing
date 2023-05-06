@@ -1,0 +1,3 @@
+It is a hashing technique that minimizes the remapping of keys to values when a hash table is resized.
+Let’s take the example of servers A, B, C, and D.
+The clients are hashed and mapped for their requests to be distributed to the nearest server in a clockwise fashion.
