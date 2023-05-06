@@ -1,0 +1,2 @@
+A type of reverse proxy that helps distribute incoming requests across servers that are part of a system.
+An example of a popular reverse proxy and load balancer is Nginx.
