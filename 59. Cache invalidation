@@ -1,0 +1,6 @@
+When database entries are changed, the cache entries become ‘stale’ or invalid. These cache entries are replaced following the below-mentioned schemes:
+1. Write-through cache: New entries are written to the cache and the corresponding database at the same time
+
+2. Write-around cache: New entries are written to the database bypassing the cache
+
+3. Write-back cache: New entries are written to the cache and subsequently and conditionally to the corresponding database
