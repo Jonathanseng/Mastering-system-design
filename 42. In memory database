@@ -1,0 +1,2 @@
+A database that relies on RAM to store and access data. These allow operations that are much faster than traditional databases that use data storage on disk.
+For example, Redis and SQLite.
