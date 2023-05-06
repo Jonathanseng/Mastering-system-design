@@ -1,0 +1,8 @@
+A conceptual communication model that splits communication between computer nodes into 7 different abstraction layers:
+!"Layer 1: Physical layer !"Layer 
+2: Data Link layer !"Layer 
+3: Network layer !"Layer 
+4:Transport layer !"Layer 
+5: Session layer !"Layer 
+6: Presentation layer !"Layer 
+7: Application layer
