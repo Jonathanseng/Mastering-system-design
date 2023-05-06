@@ -6,3 +6,52 @@ A conceptual communication model that splits communication between computer node
 5: Session layer !"Layer 
 6: Presentation layer !"Layer 
 7: Application layer
+
+how OSI work?
+
+The Open Systems Interconnection (OSI) model is a conceptual model for computer network architecture that divides the communication process into seven layers. Each layer is responsible for specific functions and protocols, and communication between layers is defined by standardized protocols.
+
+The OSI model works by defining the functions and protocols that are required for communication between network devices. The seven layers of the OSI model are:
+
+Physical layer: This layer defines the physical characteristics of the communication medium, such as the voltage levels and timing of the signals that are transmitted over it.
+
+Data Link layer: This layer is responsible for transferring data between adjacent nodes over the physical layer. It provides error detection and correction, flow control, and framing.
+
+Network layer: This layer is responsible for routing data between different networks. It defines the logical addressing and routing mechanisms that allow data to be transmitted between nodes that are not directly connected.
+
+Transport layer: This layer is responsible for reliable end-to-end communication between applications on different devices. It provides flow control, error detection and correction, and sequencing.
+
+Session layer: This layer is responsible for establishing, maintaining, and terminating connections between applications on different devices. It provides synchronization and checkpointing.
+
+Presentation layer: This layer is responsible for translating data between different formats and character sets. It provides data compression and encryption.
+
+Application layer: This layer is responsible for providing network services to applications. It defines the protocols that applications use to exchange data.
+
+Each layer communicates with the layer above and below it through standardized protocols. When data is transmitted between devices, it is passed down through the layers of the OSI model, with each layer adding its own header and footer information to the data.
+
+At the receiving end, the layers of the OSI model remove the header and footer information added by the corresponding layers on the sender's side, and the original data is passed up to the application layer.
+
+The OSI model provides a standard framework for designing and implementing network protocols and systems. It helps to ensure interoperability between different network devices and software, and makes it easier to troubleshoot and diagnose network problems.
+
+OSI and its application:
+
+
+The Open Systems Interconnection (OSI) model is a conceptual model for computer network architecture that divides the communication process into seven layers. Each layer is responsible for specific functions and protocols, and communication between layers is defined by standardized protocols.
+
+The seven layers of the OSI model are:
+
+Physical layer: This layer is responsible for transmitting raw data over the physical medium. It defines the electrical, mechanical, and timing interfaces for the physical connection between devices.
+
+Data Link layer: This layer is responsible for transferring data between adjacent nodes over the physical layer. It provides error detection and correction, flow control, and framing.
+
+Network layer: This layer is responsible for routing data between different networks. It defines the logical addressing and routing mechanisms that allow data to be transmitted between nodes that are not directly connected.
+
+Transport layer: This layer is responsible for reliable end-to-end communication between applications on different devices. It provides flow control, error detection and correction, and sequencing.
+
+Session layer: This layer is responsible for establishing, maintaining, and terminating connections between applications on different devices. It provides synchronization and checkpointing.
+
+Presentation layer: This layer is responsible for translating data between different formats and character sets. It provides data compression and encryption.
+
+Application layer: This layer is responsible for providing network services to applications. It defines the protocols that applications use to exchange data.
+
+The OSI model is used as a reference model for network protocols and systems. It helps to standardize communication protocols and ensure interoperability between different network devices and software. While many modern network protocols do not strictly adhere to the OSI model, it remains an important conceptual framework for understanding network architecture and design.
