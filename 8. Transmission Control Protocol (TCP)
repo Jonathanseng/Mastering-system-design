@@ -1,3 +1,37 @@
 A set of rules in the Transport layer of TCP/IP that ensure
 reliable transmission of data between computer nodes.
 It is a connection-oriented protocol that makes sure that a reliable connection is established between the sender/client and receiver/server nodes before any data packets can be sent.
+
+How TCP work?
+
+The Transmission Control Protocol (TCP) is a core protocol of the Internet Protocol Suite that is used for reliable transmission of data between devices over a network. TCP provides a guaranteed, ordered, and error-checked delivery of data packets between applications.
+
+Here's how TCP works:
+
+Connection establishment: Before data can be transmitted between two devices, a connection must be established between them. The three-way handshake process is used to establish a connection, where the client sends a SYN packet to the server, the server responds with a SYN-ACK packet, and the client sends an ACK packet back to the server.
+
+Data transmission: Once a connection has been established, data can be transmitted between the client and server. TCP segments the data into packets and adds a header to each packet that includes sequence numbers, acknowledgments, and other control information. Each packet is then transmitted individually and independently to the receiver.
+
+Acknowledgments and flow control: As each packet is received by the receiver, it sends an acknowledgment packet back to the sender to confirm that the packet was received successfully. If the sender doesn't receive an acknowledgment within a certain amount of time, it assumes the packet was lost or corrupted and retransmits it. TCP also includes flow control mechanisms that allow the sender to adjust the rate of transmission based on the receiver's ability to process data.
+
+Connection termination: When all data has been transmitted, the connection can be terminated. This is done using a four-way handshake process, where the client sends a FIN packet to the server, the server responds with a FIN-ACK packet, the client sends an ACK packet back to the server, and the connection is closed.
+
+TCP is used in many different applications, including web browsing, email, file transfers, and more. Its reliability and error-checking mechanisms make it ideal for applications that require accurate and ordered transmission of data.
+
+TCP and its application:
+
+The Transmission Control Protocol (TCP) is widely used in a variety of applications that require reliable, ordered, and error-checked transmission of data over a network. Here are some common applications of TCP:
+
+Web browsing: When you browse the internet, your web browser uses TCP to communicate with web servers and transmit data such as HTML pages, images, and videos.
+
+Email: When you send and receive email, TCP is used to transmit the email message between your email client and the email server.
+
+File transfer: When you upload or download files from a server, TCP is used to ensure the files are transmitted accurately and in the correct order.
+
+Voice over IP (VoIP): VoIP applications such as Skype and Zoom use TCP to transmit voice data between participants in a call.
+
+Remote desktop access: When you use a remote desktop application to access a computer over the internet, TCP is used to transmit data between the remote computer and your local computer.
+
+Online gaming: Many online games use TCP to transmit game data between players, ensuring that game actions are transmitted accurately and in the correct order.
+
+Overall, TCP is a critical protocol for ensuring reliable data transmission over the internet and is used in many different applications that require accurate and ordered transmission of data.
