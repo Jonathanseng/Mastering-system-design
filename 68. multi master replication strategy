@@ -1,0 +1,3 @@
+It is a strategy used to scale a database by creating replicas of it.
+Each of the replicated instances supports reading from and writing to the database.
+This strategy can lead to the creation of conflicts (creation of two rows with the same ID) when writing to the database.
