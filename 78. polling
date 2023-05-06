@@ -1,0 +1,2 @@
+It is the process of fetching data from a server/ checking if a communication device is connected, at frequent and regular intervals.
+Polling is used in applications where data needs to be fetched from a server at regular intervals. For example, data of the number of reads of an article on Medium.
