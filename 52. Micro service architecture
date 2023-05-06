@@ -1,0 +1,3 @@
+A type of software architecture where all the functions
+performed by a software application are deployed as different independently functioning services.
+For example, Amazon can be divided into a shopping cart service, payments service, and inventory service that function independently and interact with each other.
