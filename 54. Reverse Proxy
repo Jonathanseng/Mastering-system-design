@@ -1,0 +1,7 @@
+
+A server that acts as an intermediary between a server and client and helps the server with the following:
+
+1. Improves server’s security
+2. Load balancing
+3. Caching responses to common requests to the server !"
+4. Log management
