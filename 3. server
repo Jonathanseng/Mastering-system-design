@@ -1,1 +1,37 @@
 A computer node that contains and provides resources to other computer nodes in a computer network. E.g. The computer that contains data of your Medium profile that is sent back to your browser when requested.
+
+how server work?
+
+A server is a computer or a software program that provides services or resources to other computers or programs, which are known as clients. Servers can be used for a variety of purposes, such as hosting websites, handling email, storing data, and providing network services.
+
+Here is a general overview of how a server works:
+
+The server is set up and configured with the necessary hardware and software to provide the desired services.
+The server is connected to a network or the Internet, so that clients can access its services.
+Clients send requests to the server for the desired services or resources.
+The server receives the requests and processes them, usually by running the appropriate software or scripts.
+The server sends the requested services or resources back to the client, usually in the form of data or output.
+The server may also store and manage data, authenticate users, and enforce security policies.
+The exact details of how a server works can vary depending on the specific type of server and the services it provides. For example, a web server might use a web server software like Apache or Nginx to process HTTP requests and serve web pages, while a database server might use a database management system like MySQL or PostgreSQL to store and retrieve data. Nonetheless, the general principles remain the same: a server provides services to clients by receiving and processing requests, and then sending back the requested data or output.
+
+server and its application:
+
+A server is a computer or a software program that provides services or resources to other computers or programs, which are known as clients. Servers can be used for a variety of purposes, such as:
+
+Web hosting: A server can be used to host websites and provide access to web pages and other web-related resources.
+
+Email hosting: A server can be used to handle email and provide email services to users.
+
+File sharing: A server can be used to share files and data between multiple users or computers.
+
+Application hosting: A server can be used to host applications and provide access to software programs and services.
+
+Database management: A server can be used to store and manage data, and provide access to databases and data management systems.
+
+Network services: A server can be used to provide network services such as DNS, DHCP, and VPN services.
+
+Gaming: A server can be used to host multiplayer games and provide gaming services to players.
+
+Cloud computing: A server can be used in cloud computing environments to provide virtualized computing resources to clients.
+
+These are just a few examples of the many applications of servers. Servers play a critical role in modern computing infrastructure, providing the services and resources that enable organizations and individuals to communicate, collaborate, and share information.
