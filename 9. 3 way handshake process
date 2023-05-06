@@ -13,3 +13,37 @@ The client acknowledges (ACK) the response of the server
 
 and sends an ACK signal to establish a reliable connection with the server.
 This is like saying “This is Ashish. I would like to talk about...”
+
+
+how 3 way handshake process work?
+
+The three-way handshake is a process used by the Transmission Control Protocol (TCP) to establish a connection between two devices. The process involves three steps:
+
+SYN (Synchronize) - The first device sends a SYN packet to the second device, which includes a random sequence number (SEQ) that identifies the start of the connection. This packet is sent with the SYN flag set.
+
+SYN-ACK (Synchronize-Acknowledgment) - The second device responds with a SYN-ACK packet, which includes an acknowledgment number (ACK) that confirms the receipt of the initial SYN packet. The second device also generates its own random sequence number (SEQ) and sends it in the SYN-ACK packet.
+
+ACK (Acknowledgment) - The first device sends an ACK packet to the second device, which includes the acknowledgment number (ACK) from the SYN-ACK packet. This confirms the receipt of the second device's SYN-ACK packet, and completes the three-way handshake.
+
+After the three-way handshake is complete, the devices are considered to be connected and can begin transmitting data using the established TCP connection.
+
+Here's an example of the three-way handshake process between two devices, device A and device B:
+
+Device A sends a SYN packet to device B with a random sequence number of 1000.
+Device B responds with a SYN-ACK packet that includes an acknowledgment number of 1001 and a random sequence number of 2000.
+Device A sends an ACK packet to device B with an acknowledgment number of 2001.
+At this point, the connection is established and both devices can begin transmitting data using the TCP protocol.
+
+3 way of handshake process and its application:
+
+The three-way handshake is a fundamental process in networking that is used by the Transmission Control Protocol (TCP) to establish a reliable connection between two devices. The process is critical for ensuring that data is transmitted accurately and without loss or corruption.
+
+The application of the three-way handshake can be seen in many different types of network communication, including web browsing, email, file transfers, and more. Here are some examples of how the three-way handshake is used in these applications:
+
+Web browsing: When you enter a URL in your web browser and hit enter, your computer sends a SYN packet to the web server, which responds with a SYN-ACK packet that includes information about the web page you requested. Your computer then sends an ACK packet to confirm that it received the SYN-ACK packet, and the web page is loaded in your browser.
+
+Email: When you send an email, your computer sends a SYN packet to the mail server, which responds with a SYN-ACK packet indicating that it is ready to receive your email. Your computer then sends the email message, followed by an ACK packet to confirm that the message was received.
+
+File transfers: When you upload or download a file, your computer sends a SYN packet to the file server, which responds with a SYN-ACK packet indicating that it is ready to transfer the file. Your computer then sends the file, followed by an ACK packet to confirm that the file was received.
+
+In each of these cases, the three-way handshake ensures that the data is transmitted accurately and that both devices are aware of the connection status. Without the three-way handshake, it would be much more difficult to establish reliable network connections and transmit data securely.
