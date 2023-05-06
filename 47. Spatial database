@@ -1,0 +1,2 @@
+It is a database that is optimized to store spatial data/objects defined in a geometric space (e.g. maps).
+Examples of this are Esri Geodatabases & Snowflake.
