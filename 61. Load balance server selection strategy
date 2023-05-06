@@ -1,0 +1,20 @@
+
+A Load Balancer uses different strategies to distribute incoming traffic to different servers.
+The common load balancing strategies are:
+
+1. Round Robin Strategy
+The requests are distributed in a circular fashion to all the servers.
+If we have three servers A, B, and C, the requests are first sent to A, then B, and C, starting back at A.
+
+2. Weighted Round Robin
+Weights are assigned to different servers according to their capacity for handling requests.
+The requests are distributed in a circular fashion to all these servers with respect to their weights.
+
+3. Random Selection
+The requests are distributed in a random fashion to all the servers.
+
+4. Selection According To IP address
+The IP address of a client is hashed to create a unique key that is used to redirect a request toward a particular server.
+
+5. Selection According To Server Performance
+According to this strategy, the requests can be redirected to the server with the least congestion / the fastest response time.
