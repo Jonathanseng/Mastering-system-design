@@ -1,0 +1,15 @@
+A process on how TCP connection is established.
+The steps can be easily understood by the example of a phone call.
+
+1. SYN
+A client sends SYN(Synchronize Sequence Number) to the server. This is like calling a phone number and saying “Hello”.
+
+2. SYN + ACK
+The server acknowledges the connection request by sending an SYN-ACK signal back.
+This is like saying “Hello” in return when you receive a call.
+
+3. ACK
+The client acknowledges (ACK) the response of the server
+
+and sends an ACK signal to establish a reliable connection with the server.
+This is like saying “This is Ashish. I would like to talk about...”
