@@ -1,0 +1,11 @@
+It is a technique of passing instructions to invoke behavior on a system without directly contacting it.
+Message passing can be:
+
+1. Synchronous: Between objects running at the same time
+
+2. Asynchronous: Between objects that may not be active/ready to execute commands at the same time when
+an instruction is received Message passing can include:
+
+3. Local objects: Where sender and receiver are on the same system
+
+4. Distributed objects: Where sender and receiver are on different computers / run a different OS or programming language (for example, Remote procedure call)
