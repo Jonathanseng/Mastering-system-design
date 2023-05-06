@@ -1,0 +1,3 @@
+It is a process of controlling the rate of requests sent to and received by a system.
+Rate limiting of incoming requests is done to prevent DoS attacks.
+A popular rate limiting strategy is by tracking the IP addresses of clients.
