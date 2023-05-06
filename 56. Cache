@@ -1,0 +1,2 @@
+Memory hardware that stores responses to common requests to a server or results of computationally expensive operations to decrease latency in a system.
+For example, results from common DNS lookup requests are cached, stored, and returned to the client to avoid querying the DNS database repeatedly, thereby decreasing latency.
