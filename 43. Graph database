@@ -1,0 +1,3 @@
+A database that uses the graph data structure and stores data with its associated properties into nodes and its relationships into edges.
+A popular graph database is Neo4j.
+It uses Cypher, which is a graph-optimized query language for database 
