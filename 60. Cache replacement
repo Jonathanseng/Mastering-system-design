@@ -1,0 +1,7 @@
+A policy that guides which entries in a cache will be replaced when it is full and when cache misses occur.
+Some of the commonly used policies include:
+
+1. Random replacement (RR): Cached entries are replaced at random
+2. Least Recently Used (LRU): Least recently used cached entry will be replaced
+3. Least Frequently Used (LFU): Least frequently used cached entry will be replaced
+4. First In, First Out (FIFO): Cache entries are replaced in the order that they came into the cache
