@@ -1,0 +1,5 @@
+It is a collection of data organized into one or more tables
+consisting of rows and columns.
+In a relational database, different tables can have logical connections/relationships between them.
+These databases usually support the use of Structured Query Language (SQL).
+For example, PostgreSQL and MySQL.
