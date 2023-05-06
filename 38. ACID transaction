@@ -1,0 +1,6 @@
+These are the transactions within a DBMS (ACID compliant) that ensure the following properties:
+!"Atomicity: Each transaction either succeed and performs a task it is intended to do in a database or fails completely leaving the database in its original state.
+!"Consistency: On completion of a transaction, the database should be in a valid/structurally sound state to ensure consistency
+!"Isolation: Concurrent execution of transactions should cause the same changes in a database as would have been caused if the transactions were executed sequentially
+!"Durability: Completed transactions should persist in the database even in the case of network partition or power failure
+SQL databases are usually ACID compliant.
