@@ -1,0 +1,4 @@
+It states that a distributed database can only ensure two of the three:
+!"Consistency
+!"Availability
+!"Partition Tolerance: It is the ability of a database cluster to continue to work even in the case of a network partition.
