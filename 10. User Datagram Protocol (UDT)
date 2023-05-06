@@ -1,3 +1,35 @@
 A set of rules in the Transport layer of TCP/IP that does not require a fixed reliable channel between the sender and
 receiver when transmitting data packets.
 It is connection-less unlike TCP and ensures quick data transmission.
+
+How user datagram protocol work(UDT)
+
+
+User Datagram Protocol (UDP) is a transport layer protocol that provides a connectionless, unreliable, and low-overhead data transfer service between applications. UDP works by dividing data into small packets, each containing a source and destination port number, and sending them to the destination without establishing a connection.
+
+When an application wants to send data using UDP, it constructs a datagram consisting of the data to be sent and the source and destination port numbers. The source port number is typically chosen by the operating system, while the destination port number is chosen by the application or protocol being used.
+
+Once the datagram is constructed, it is sent to the destination using the Internet Protocol (IP) network layer. Unlike Transmission Control Protocol (TCP), UDP does not establish a connection with the destination before sending data. Instead, it simply sends the datagram to the destination IP address and port number.
+
+At the receiving end, the IP layer receives the datagram and forwards it to the appropriate application based on the destination port number. The application then processes the data in the datagram.
+
+UDP is often used for real-time applications, such as online gaming and streaming media, where low latency and high throughput are important. While UDP does not provide many of the reliability and flow control features of TCP, its low overhead and connectionless nature make it a useful protocol in many situations where these features are not necessary.
+
+Overall, UDP is a lightweight, efficient, and flexible protocol that provides a simple and fast way to transfer data between applications.
+
+Application of the UDT:
+
+
+User Datagram Protocol (UDP) is a lightweight and efficient transport layer protocol that is widely used in a variety of applications. Some common applications of UDP include:
+
+Real-time communication: UDP is commonly used in real-time communication applications, such as Voice over IP (VoIP), video conferencing, and online gaming. These applications require low latency and high throughput, which UDP provides by sending data without establishing a connection.
+
+Streaming media: UDP is often used to stream media content, such as video and audio. Because UDP is connectionless and does not provide flow control, it can be used to quickly transmit media content without delay.
+
+DNS: The Domain Name System (DNS) uses UDP to quickly resolve domain names to IP addresses. Because DNS requests are typically small and require a quick response, UDP is a good choice for this application.
+
+Network monitoring and management: UDP is often used in network monitoring and management applications, such as SNMP and syslog. These applications require the transmission of small amounts of data with low overhead, making UDP a good choice.
+
+Internet of Things (IoT): UDP is commonly used in IoT applications that require low overhead and real-time communication. IoT devices often have limited resources, and UDP's lightweight nature makes it a good choice for these applications.
+
+Overall, UDP is a useful protocol in situations where low latency, high throughput, and low overhead are important. While UDP does not provide many of the reliability and flow control features of TCP, its simplicity and efficiency make it a popular choice in many applications.
