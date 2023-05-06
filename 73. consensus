@@ -1,0 +1,2 @@
+It is a process where different nodes in a multi-node system agree to reach a common conclusion.
+Nodes in distributed systems use algorithms such as Paxos and Raft to reach consensus.
