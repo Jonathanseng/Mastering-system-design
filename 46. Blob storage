@@ -1,0 +1,2 @@
+It is a database that is optimized to store binary large objects.
+Examples of this are Amazon S3, Google Cloud Storage & Azure Blob Storage.
