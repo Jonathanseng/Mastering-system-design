@@ -1,3 +1,31 @@
 A set of rules in the Internet layer of TCP/IP that governs the
 transmission of packets from the source to the destination host according to their IP addresses.
 The two versions of it are IPv4 and IPv6.
+
+How internet protocol work?
+
+The Internet Protocol (IP) is a network-layer protocol that provides the basic infrastructure for communication over the Internet. IP operates by breaking data into small packets and routing them over a network to their destination. Here is a simplified overview of how IP works:
+
+Packetization: When a device wants to send data over a network, it first divides the data into small packets. Each packet contains the source and destination IP addresses, as well as some other header information that is used for routing the packet to its destination.
+
+Routing: The packet is then sent over the network, and each router on the network examines the destination IP address in the packet header to determine where to send it next. Each router forwards the packet to the next router along the path until the packet reaches its final destination.
+
+Delivery: Once the packet reaches its final destination, the device at the receiving end reassembles the packets into the original data, based on the information in the packet headers.
+
+It's important to note that IP provides a connectionless, best-effort delivery service, which means that it does not guarantee the delivery of packets and does not provide error correction or flow control. This is in contrast to protocols like TCP (Transmission Control Protocol), which operate at a higher layer of the protocol stack and provide more reliable and controlled delivery of data.
+
+application of internet protocol:
+
+The Internet Protocol (IP) is a fundamental protocol used in computer networking that is responsible for delivering packets of data from one device to another over the Internet. Some of the key applications of IP include:
+
+Routing: IP is used to route data between different devices on a network. It is responsible for determining the most efficient path for data to travel from the source to the destination.
+
+Addressing: IP provides a unique addressing scheme that allows devices on a network to be identified and addressed. Each device is assigned an IP address, which is used to route data to and from that device.
+
+Fragmentation and reassembly: IP is responsible for breaking data into smaller packets and reassembling them at the destination. This allows large amounts of data to be transmitted efficiently over a network.
+
+Multicasting: IP also supports multicasting, which allows data to be transmitted to multiple recipients simultaneously.
+
+Quality of Service (QoS): IP includes features that allow for the prioritization of traffic on a network. This is important for applications that require low latency and high bandwidth, such as video streaming or online gaming.
+
+Overall, IP is a critical protocol that forms the foundation of the Internet and allows for communication between devices across different networks.
