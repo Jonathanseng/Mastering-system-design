@@ -1,0 +1,3 @@
+It is the process of partitioning a database into multiple small
+units called Shards.
+This strategy horizontally scales and increases the throughput of a database.
