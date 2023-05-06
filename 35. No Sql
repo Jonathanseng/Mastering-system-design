@@ -1,0 +1,4 @@
+It is a collection of data organized into a non-tabular form.
+The structure of the storage model is flexible and is optimized for the type of data to be stored.
+These usually do not support the use of SQL and are also called No-SQL databases.
+For example, Firebase and MongoDB.
