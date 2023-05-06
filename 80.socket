@@ -1,0 +1,2 @@
+It is one of the end-points of a two-way communication link between two nodes on a computer network.
+Each socket is identified by an address composed of the transport protocol (TCP/ UDP), an IP address, and a port number.
