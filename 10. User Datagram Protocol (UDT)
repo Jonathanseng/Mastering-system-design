@@ -1,0 +1,3 @@
+A set of rules in the Transport layer of TCP/IP that does not require a fixed reliable channel between the sender and
+receiver when transmitting data packets.
+It is connection-less unlike TCP and ensures quick data transmission.
