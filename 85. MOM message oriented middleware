@@ -1,0 +1,2 @@
+It is an architectural pattern that allows asynchronous inter- application communication.
+A messaging queue (that allows FIFO operations) is used as middleware to send messages (blocks of information/instructions) between message creators/senders and message receivers.
