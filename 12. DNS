@@ -1,0 +1,5 @@
+DNS or Domain Name System protocol is used to lookup up IP addresses corresponding to domain names.
+Think of this as a directory of phone numbers
+
+When you type www.google.com (domain name) in your browser, a request is sent to a DNS server. This server returns the corresponding IP address for this domain name i.e.
+216.58.212.206 . This IP address is requested for the required resources used to display Google’s homepage.
