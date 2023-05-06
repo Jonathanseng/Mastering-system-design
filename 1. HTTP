@@ -1,0 +1,2 @@
+HTTP (The Hyper Text Transfer Protocol) is an internet protocol that is used to send and receive data between client and server.
+To perform CRUD (create, read, update and delete) operations, HTTP uses verbs like GET , POST , PUT , PATCH and DELETE .
