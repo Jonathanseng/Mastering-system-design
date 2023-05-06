@@ -1,0 +1,6 @@
+A condensed version of the OSI model that uses 4 layers and references to how the Internet is implemented currently.
+!"Layer 
+1: Network Access Layer
+2: Internet Layer 
+3: Transport Layer 
+4: Application Layer
