@@ -1,0 +1,4 @@
+It is a strategy used to scale a database by creating replicas of it.
+Data can be read from the replicated instances but can only be written to the primary database.
+Data written to the primary database is asynchronously updated in the replicas.
+This strategy compromises the consistency of a database.
