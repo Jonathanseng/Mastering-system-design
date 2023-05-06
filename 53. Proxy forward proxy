@@ -1,0 +1,3 @@
+A server that acts as an intermediary between a client and server and helps the client with the following:
+!"Improves the privacy of the client by making requests to the server on its behalf
+!"Helps cache data to speed up responses to common requests from the client
