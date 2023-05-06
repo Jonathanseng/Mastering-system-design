@@ -1,0 +1,2 @@
+A database where data is stored and retrieved using a key that uniquely identifies the record (value).
+For example, Redis and etcd.
