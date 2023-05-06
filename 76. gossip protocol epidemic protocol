@@ -1,0 +1,4 @@
+It is a protocol used by P2P networks to disseminate data between all nodes that form the network.
+There is no central entity and the information is sent to each node by passing it along to its neighbor nodes.
+
+This is analogous to how gossip spreads in an office or how an epidemic spreads in the community.
