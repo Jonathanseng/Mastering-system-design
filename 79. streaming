@@ -1,0 +1,5 @@
+It is the process of establishing a continuous communication link between two computer nodes.
+
+This allows the flow of data from a server node to a client node without the client node making regular requests to the server node.
+The server node ‘pushes’ data to the client node whenever there is a state change.
+Streaming is commonly used by chat applications.
