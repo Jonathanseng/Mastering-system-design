@@ -1,1 +1,27 @@
 A computer node that requests resources in a computer network. E.g. Your computer when using a browser to open your Medium profile.
+
+how client work?
+
+A client is a program or device that makes requests to a server in order to retrieve data or resources. In order to make a request, a client needs to know the address of the server it wants to connect to and the port it should connect on. The client also needs to use a protocol that both the client and server understand in order to communicate.
+
+When a client program starts, it typically first creates a socket, which is a combination of an IP address and a port number, and then uses that socket to connect to the server. Once the connection is established, the client can then send requests to the server and receive responses.
+
+client and its application:
+
+A client is a program or device that requests services or resources from a server. Clients are used in a wide range of applications, including web browsing, email, file transfer, video conferencing, and gaming.
+
+Some common types of clients include:
+
+Web browsers: A web browser is a client that requests web pages and other resources from a web server, and displays them to the user.
+
+Email clients: An email client is a program that connects to an email server, downloads messages, and allows the user to read and send emails.
+
+FTP clients: An FTP (File Transfer Protocol) client is a program that connects to an FTP server, and allows the user to upload and download files.
+
+Chat clients: A chat client is a program that connects to a chat server, and allows the user to send and receive messages in real time.
+
+Game clients: A game client is a program that connects to a game server, and allows the user to play games online with other players.
+
+Clients can communicate with servers using a variety of protocols, including HTTP, FTP, SMTP, and many others. In most cases, clients use a standard protocol to communicate with servers, but in some cases, custom protocols may be used for specific applications.
+
+In general, clients are responsible for initiating connections to servers, sending requests for services or resources, and processing the responses from servers. Clients can be designed to run on a variety of platforms, including desktop computers, mobile devices, and embedded systems.
