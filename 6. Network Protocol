@@ -1,1 +1,36 @@
 A set of rules that dictate how computer nodes exchange data across networks.
+
+How network protocol work?
+
+Network protocols are sets of rules and standards that govern communication between devices on a network. These protocols specify how data is transmitted over a network, how devices identify and communicate with each other, and how errors and congestion are managed.
+
+At a high level, network protocols work by breaking up data into smaller pieces called packets, which are then transmitted over the network from one device to another. Each packet contains a header that identifies the packet's source and destination, as well as other metadata such as packet size and sequence number. The header is followed by the actual data being transmitted.
+
+When a device receives a packet, it checks the header to determine whether the packet is intended for that device. If so, the device processes the packet and sends an acknowledgement back to the sender. If the packet is not intended for that device, it is either dropped or forwarded to the next device in the network path.
+
+Different types of network protocols may use different packet structures, addressing schemes, and error detection and correction techniques. Some common network protocols include:
+
+Internet Protocol (IP): a network layer protocol that governs how packets are transmitted over the Internet and other IP-based networks.
+Transmission Control Protocol (TCP): a transport layer protocol that provides reliable, connection-oriented data transfer between devices.
+User Datagram Protocol (UDP): a transport layer protocol that provides unreliable, connectionless data transfer between devices.
+Hypertext Transfer Protocol (HTTP): an application layer protocol that governs how web browsers and servers communicate over the Internet.
+File Transfer Protocol (FTP): an application layer protocol that governs how files are transferred between devices over a network.
+In order for devices to communicate effectively over a network, they must use compatible protocols and standards. This ensures that packets are transmitted and received correctly, and that devices are able to understand each other's messages.
+
+Network protocol and its application:
+
+Network protocols have a wide range of applications across many different industries and technologies. Some common applications of network protocols include:
+
+Communication between devices: Network protocols enable devices such as computers, servers, routers, and switches to communicate with each other over a network.
+
+Data transfer and sharing: Network protocols facilitate the transfer and sharing of data between devices, allowing users to access files and information from remote locations.
+
+Internet and web browsing: Network protocols such as the Transmission Control Protocol (TCP) and the Hypertext Transfer Protocol (HTTP) are used to enable Internet and web browsing, allowing users to access websites and online resources.
+
+Voice and video communication: Network protocols such as the Real-time Transport Protocol (RTP) and the Session Initiation Protocol (SIP) enable voice and video communication over the Internet and other IP-based networks.
+
+Cloud computing and virtualization: Network protocols are used to enable cloud computing and virtualization, allowing users to access and manage remote computing resources.
+
+Internet of Things (IoT): Network protocols are used to enable communication between IoT devices, allowing them to share data and communicate with other devices and systems.
+
+Overall, network protocols play a critical role in enabling communication and data transfer between devices and systems, and are essential for the functioning of modern networks and the Internet.
