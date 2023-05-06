@@ -1,0 +1,2 @@
+It is the process of duplicating critical components of a system (for example, the database of a web application) to increase its reliability.
+It eliminates single points of failure in the system.
