@@ -1,0 +1,12 @@
+It involves the processing of data from a data stream to produce the desired output.
+In comparison to Batch processing, Stream processing is performed in real-time on unbounded data streams rather than on a fixed-size input.
+
+A stream processing system can be used for:
+
+1. Building fraud detection systems
+
+2. Log monitoring
+
+3. Building Stock price data analytic tools, etc.
+Amazon Kinesis is a popular stream processing service.
+Apache Kafka Streams and Apache Spark are other open- source stream processing services.
