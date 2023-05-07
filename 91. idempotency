@@ -1,0 +1,5 @@
+An operation is called Idempotent when it can be performed multiple times without changing the result beyond the first time it was performed.
+For example: If an operator sets the value of a variable called isCompleted to True , repeated operations won’t cause any
+change in the value of this variable. Such an operation will be
+called idempotent.
+Idempotent operations are commonly used in messaging services to ensure that messages are delivered to consumers at least once.
