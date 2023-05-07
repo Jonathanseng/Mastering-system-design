@@ -1,0 +1,9 @@
+It is a database management system designed to support multiple data models such as a relational model, document- oriented model, graph model, key-value model, etc.
+
+For example:
+
+1. ArangoDB: Supports document (JSON), graph, key-value models
+
+2. Redis: Supports key–value, document (JSON), property graph, streaming, time-series models
+
+3. EnterpriseDB: Supports document (XML and JSON), key– value models]
