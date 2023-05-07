@@ -1,4 +1,48 @@
 Micro-frontends is a pattern of building large applications in smaller chunks (vertical slices) where each feature is built, tested, and deployed end-to-end (including front end, backend, and database) by different teams.
 These chucks are combined together on the:
-!"Client-side (using direct links/frameworks such as Single SPA)
-!"Server-side (using frameworks such as Podium )
+
+1. Client-side (using direct links/frameworks such as Single SPA)
+
+2. Server-side (using frameworks such as Podium )
+
+how micro front ends work?
+
+In a micro frontend architecture, the application is composed of multiple small, independent, and self-contained frontend modules, each of which implements a specific feature or functionality of the overall application. Each micro frontend can be developed and deployed independently, and communicates with other micro frontends via APIs or message passing.
+
+Here's an overview of how micro frontends work:
+
+Each micro frontend is developed as a self-contained module, using a specific technology or framework, such as React, Angular, or Vue.
+
+Each micro frontend is deployed to its own web server, or can be served from a CDN, depending on the specific requirements of the application.
+
+Each micro frontend exposes a set of APIs or messages that allow other micro frontends to communicate with it.
+
+A central orchestrator or router, such as an API gateway or client-side router, manages the communication between the micro frontends and routes requests to the appropriate micro frontend based on the specific functionality being requested.
+
+Each micro frontend is responsible for rendering its own user interface, and can be developed using different technologies and frameworks.
+
+State management is typically managed using a separate tool or framework, such as Redux or MobX, to ensure that state is managed consistently across all micro frontends.
+
+Each micro frontend can be scaled independently, depending on the specific requirements of the application.
+
+Overall, micro frontends provide a flexible, scalable, and maintainable way to build web applications. By breaking down the application into smaller, self-contained modules, developers can improve the agility and resilience of the overall application, and provide a better user experience for their customers.
+
+micro front end and its application:
+
+Micro frontends is a technique for building web applications as a composition of small, independent, and self-contained frontend modules, each of which implements a specific feature or functionality of the overall application. This architectural pattern is similar to microservices, but applied to the frontend layer of the application.
+
+In a micro frontend architecture, the application is broken down into smaller pieces, called micro frontends. Each micro frontend is built and deployed independently, and communicates with other micro frontends via APIs or message passing. Each micro frontend is responsible for rendering its own user interface, and can be developed using different technologies and frameworks.
+
+Micro frontends provide several benefits, such as:
+
+Scalability: Micro frontends can be independently scaled horizontally or vertically, depending on the specific requirements of each module.
+Flexibility: Different teams can work on different micro frontends, using their preferred technologies and frameworks, without affecting the other parts of the application.
+Reusability: Micro frontends can be reused across different applications, reducing development time and cost.
+Maintainability: Micro frontends are easier to maintain and upgrade, as each module is self-contained and has a clear boundary of responsibility.
+To implement micro frontends, developers can use a variety of tools and frameworks, such as:
+
+Web components: A set of web standards that allow developers to create reusable components that can be used across different frameworks and applications.
+iFrames: A technique for embedding one HTML document inside another, allowing different modules to be developed and deployed independently.
+API gateways: A centralized gateway that routes requests to the appropriate micro frontend, based on the specific functionality being requested.
+State management tools: A set of tools and frameworks that help manage the state of the application across different micro frontends, such as Redux or MobX.
+Overall, micro frontends is a powerful technique for building scalable, flexible, and maintainable web applications. By breaking down the application into smaller, self-contained modules, developers can improve the agility and resilience of the overall application, and provide a better user experience for their customers.
