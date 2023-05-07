@@ -1,0 +1,8 @@
+It is a popular open-source distributed event streaming platform that allows:
+
+1. Publishing and subscribing to event streams/messages (PubSub)
+
+2. Storage of event streams 
+
+3. Stream processing
+It is highly scalable, highly available, and allows high durability with high throughput.
