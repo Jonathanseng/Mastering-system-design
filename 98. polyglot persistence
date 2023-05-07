@@ -1,0 +1,10 @@
+It is the use of different database technologies for different microservices of an application as per the best use case.
+
+For example:
+
+1. Relational databases (MySQL, Postgres) can be used to store data and relationships of users
+
+2. Graph Databases (NeoJ4) can be used to build product recommendation service
+
+3. Key-value stores (Redis) can be used to cache data
+Read more about the different types of database models here:
