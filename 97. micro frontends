@@ -1,0 +1,4 @@
+Micro-frontends is a pattern of building large applications in smaller chunks (vertical slices) where each feature is built, tested, and deployed end-to-end (including front end, backend, and database) by different teams.
+These chucks are combined together on the:
+!"Client-side (using direct links/frameworks such as Single SPA)
+!"Server-side (using frameworks such as Podium )
