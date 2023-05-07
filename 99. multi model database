@@ -7,3 +7,36 @@ For example:
 2. Redis: Supports key–value, document (JSON), property graph, streaming, time-series models
 
 3. EnterpriseDB: Supports document (XML and JSON), key– value models]
+
+how multi model database work?
+
+
+Multi-model databases work by supporting multiple data models within a single database management system (DBMS). This means that different types of data can be stored and managed using different data models, depending on the nature of the data and the requirements of the application.
+
+The architecture of a multi-model database typically includes a common storage layer that can store and manage data using different data models. This layer can be based on a variety of storage technologies, such as a key-value store, a document store, a graph database, or a relational database. Each data model is implemented as a module within the storage layer, and provides a specific set of APIs or query languages for accessing and manipulating data.
+
+When data is inserted or updated in a multi-model database, it is stored in the appropriate data model based on the schema of the data. For example, if a document containing unstructured data is inserted, it will be stored in the document store module of the storage layer. If a graph query is performed, the query will be processed by the graph database module of the storage layer. In this way, the multi-model database can support different data models for different types of data within the same database.
+
+To interact with a multi-model database, developers can use a variety of interfaces or APIs, depending on the specific implementation of the DBMS. For example, some multi-model databases provide a unified query language that can be used to access and manipulate data using different data models. Other databases may provide separate APIs for each data model, which can be used to perform specialized operations on the data.
+
+Overall, multi-model databases provide a flexible and efficient way to manage diverse data types within a single system, and can be a powerful tool for building modern applications that require flexible data management capabilities.
+
+application of multi database model
+
+A multi-model database is a type of database management system (DBMS) that supports multiple data models, allowing different types of data to be stored and managed within a single database. Unlike traditional relational databases, which are based on a single data model, multi-model databases can support a variety of data models, such as graph, document, key-value, and relational.
+
+The key benefit of a multi-model database is that it enables the efficient management of diverse data types within a single system, which can simplify data integration and improve the flexibility of data access. For example, a multi-model database could be used to store and manage customer data in a relational model, while also providing support for graph queries to analyze social network data, and document queries to manage unstructured data like emails.
+
+Applications of multi-model databases include:
+
+Social networks: Multi-model databases can be used to store and manage complex social network data, including user profiles, relationships between users, and activity feeds.
+
+E-commerce: Multi-model databases can be used to store and manage customer data, including transactional data, customer profiles, and shopping cart data.
+
+IoT: Multi-model databases can be used to store and manage sensor data, including time-series data, geospatial data, and machine data.
+
+Healthcare: Multi-model databases can be used to store and manage patient data, including medical records, lab results, and clinical notes.
+
+Financial services: Multi-model databases can be used to store and manage financial data, including transactional data, risk data, and compliance data.
+
+In summary, multi-model databases offer a flexible and efficient solution for managing diverse data types within a single system, which can provide significant benefits in a variety of applications.
