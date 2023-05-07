@@ -1,0 +1,12 @@
+Hadoop Distributed File System (HDFS) by Apache is a popular open-source distributed file system.
+It is an open-source reimplementation of the Google File System (GFS).
+
+HDFS consists of :
+
+1. Central server (NameNode) that keeps a record of the file blocks stored on each machine
+
+2. Worker machines (DataNode) running a networking daemon process that allows other nodes to access files stored on it
+HDFS can be considered as a large file system that uses the space on the disks of multiple computers.
+The file blocks of the system are replicated on multiple machines to ensure fault tolerance.
+The data from this file system can be processed later (e.g. by using MapReduce in Apache Hadoop).
+Read more about HDFS architecture here:
