@@ -1,0 +1,16 @@
+It involves the automated processing of a large amount of input data to produce the desired output by means of software programs called Batch jobs.
+A Batch Job is executed with minimal to no human interaction as per a schedule and can take many minutes to several days to finish.
+The primary performance of a batch processing system is measured by its throughput.
+A batch processing system can be used for: 
+
+1. Creating search indexes
+
+2. Creating recommendation systems
+
+3. Processing financial data (monthly payroll data), etc.
+
+Examples:
+
+1. MapReduce, is a popular batch processing algorithm implemented in various open source data systems at Google, Hadoop, CouchDB, and MongoDB.
+
+2. Spring Batch is another open-source framework for batch processing.
