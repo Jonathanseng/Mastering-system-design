@@ -1,0 +1,11 @@
+ElasticSearch is a free and open, search and analytics engine for different types of data (textual, numerical, geospatial, structured, and unstructured data).
+Raw data flows into Elasticsearch from a variety of sources that use Beats.
+This data is parsed, normalized, enriched using Logstash, and
+finally indexed in Elasticsearch.
+
+
+1. run complex queries against their data 
+
+2. retrieve complex summaries of their data 
+
+3. createvisualizations
