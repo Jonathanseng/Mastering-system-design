@@ -10,3 +10,20 @@ A stream processing system can be used for:
 3. Building Stock price data analytic tools, etc.
 Amazon Kinesis is a popular stream processing service.
 Apache Kafka Streams and Apache Spark are other open- source stream processing services.
+
+how stream processing work?
+
+
+Stream processing involves ingesting continuous data streams and processing them in real-time or near real-time. Here's a high-level overview of how stream processing works:
+
+Data ingestion: The first step in stream processing is to ingest the data stream from a source, such as IoT devices, social media platforms, or sensors. This data may be in different formats, such as JSON, CSV, or XML.
+
+Data processing: The data is then processed in real-time using stream processing frameworks such as Apache Kafka, Apache Storm, or Apache Flink. These frameworks enable the data to be processed in a distributed manner, across multiple nodes or servers, in parallel.
+
+Data analysis: Once the data has been processed, it can be analyzed to generate insights, such as detecting patterns or anomalies in the data, identifying trends, or predicting future events. This analysis can be done using machine learning algorithms, statistical models, or other data analysis techniques.
+
+Actionable insights: Finally, the insights generated from the data analysis can be used to trigger actions, such as sending alerts or notifications, automating processes, or making real-time decisions.
+
+Overall, stream processing enables businesses to process and analyze large volumes of data in real-time, allowing them to make data-driven decisions quickly and efficiently.
+
+stream processing and its application
