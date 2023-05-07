@@ -8,3 +8,44 @@ For example:
 
 3. Key-value stores (Redis) can be used to cache data
 Read more about the different types of database models here:
+
+how polyglot persistence work?
+
+Polyglot persistence is an architectural pattern where different types of data are stored in different databases or data storage technologies, depending on the specific needs of the data being stored. The idea is to use the right tool for the job, and not try to force a single database technology to handle all types of data.
+
+In a polyglot persistence architecture, the data is classified based on its structure, size, access patterns, and other characteristics. Different types of data are then mapped to different database technologies, based on their specific requirements. For example:
+
+Structured data, such as customer information or financial data, may be stored in a relational database, such as MySQL, PostgreSQL, or Oracle.
+Unstructured or semi-structured data, such as log files, images, or social media feeds, may be stored in a NoSQL database, such as MongoDB, Cassandra, or Couchbase.
+Graph data, such as social networks or recommendation systems, may be stored in a graph database, such as Neo4j, ArangoDB, or OrientDB.
+Each database technology has its own strengths and weaknesses, and is optimized for specific use cases. By using the right database technology for each type of data, developers can optimize performance, scalability, and data management.
+
+In a polyglot persistence architecture, applications may need to interact with multiple databases, using different APIs or query languages. This can add complexity to the application architecture, but it also provides more flexibility and agility in data management.
+
+To facilitate the use of multiple databases, developers may use a variety of tools and frameworks, such as:
+
+Object-relational mapping (ORM) tools, such as Hibernate or Django ORM, which provide a unified interface to access data stored in different databases.
+Data integration tools, such as Apache Kafka or Apache NiFi, which can stream data between different databases and applications.
+Microservices architectures, which can decouple different parts of an application and allow them to use different database technologies.
+Overall, polyglot persistence is a powerful technique for managing diverse data types in modern applications. By choosing the right database technology for each type of data, developers can optimize performance, scalability, and data management, and build applications that are more flexible and resilient to changing business requirements.
+
+application of polyglot persistence:
+
+Polyglot persistence is an architectural pattern where different types of data are stored in different databases or data storage technologies. Each database or technology is selected based on the specific needs of the data being stored, such as its structure, size, and access patterns. The goal is to use the right tool for the job, and not try to force a single database technology to handle all types of data.
+
+The main advantage of polyglot persistence is that it allows developers to choose the best storage technology for each type of data, which can lead to better performance, scalability, and data management. For example, relational databases are good for storing structured data, while document databases are better for storing unstructured data. By using different databases for different types of data, developers can optimize the performance and scalability of their applications, while also simplifying the management and maintenance of the data.
+
+Some common applications of polyglot persistence include:
+
+Big Data: In big data applications, it is common to store data in multiple databases or technologies, such as Hadoop for batch processing, Spark for real-time processing, and NoSQL databases for storage and retrieval.
+
+Microservices: In microservices architectures, each service may use a different database technology depending on the needs of the data it handles. For example, a service that handles user authentication may use a relational database, while a service that handles document storage may use a document database.
+
+Multi-model databases: Multi-model databases, as mentioned earlier, support multiple data models within a single database management system. This approach can be considered a form of polyglot persistence, as it allows developers to store different types of data using different data models within a single database.
+
+Legacy systems: In some cases, it may be necessary to maintain a legacy system that uses a specific database technology. Polyglot persistence can be used to store new data in a different database technology, while still allowing the legacy system to access and manipulate the old data.
+
+Overall, polyglot persistence is a powerful technique for managing diverse data types in modern applications. By choosing the right database technology for each type of data, developers can optimize performance, scalability, and data management, and build applications that are more flexible and resilient to changing business requirements.
+
+
+
