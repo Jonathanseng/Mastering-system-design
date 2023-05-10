@@ -3,3 +3,36 @@ For example: If an operator sets the value of a variable called isCompleted to T
 change in the value of this variable. Such an operation will be
 called idempotent.
 Idempotent operations are commonly used in messaging services to ensure that messages are delivered to consumers at least once.
+
+how idempotency work?
+
+Idempotency is achieved by designing operations in such a way that they can be applied multiple times without changing the result beyond the initial application. Here's how idempotency works:
+
+Initial Operation: When an operation is first applied, it performs its intended function and produces a result. For example, an operation to create a resource creates the resource and returns a success response.
+
+Repeated Operation: If the same operation is applied again with the same input, it will not change the result. For example, if the operation to create a resource is repeated with the same input, it will return a response indicating that the resource already exists and will not create a duplicate.
+
+Error Handling: If the same operation is applied again with different input, it should produce an error or an equivalent result that does not change the state of the system. For example, if the operation to create a resource is repeated with different input, it should return an error indicating that the input is invalid and not create a new resource.
+
+Response Codes: Idempotent operations typically use response codes to indicate whether the operation was successful, whether it produced a result that is equivalent to a previous application of the same operation, or whether it encountered an error.
+
+Idempotency Key: To ensure that operations are idempotent, a unique identifier called an idempotency key can be used to track each application of the operation. The idempotency key is sent with each request and is used to check whether the operation has already been applied.
+
+In summary, idempotency works by designing operations in such a way that they can be applied multiple times without changing the result beyond the initial application. This is achieved through careful error handling, response codes, and the use of an idempotency key to track each application of the operation.
+
+idempotency and its application
+
+
+Idempotency is the property of certain operations in computer science and mathematics that can be applied multiple times without changing the result beyond the initial application. In other words, an operation is idempotent if applying it multiple times has the same effect as applying it only once.
+
+Idempotency is an important concept in distributed systems, where network failures or other issues can cause operations to be retried multiple times. Here are some applications of idempotency:
+
+Idempotent APIs: APIs that are idempotent can help prevent unintended or duplicate operations. For example, if an API endpoint is designed to create a resource, making it idempotent means that calling the endpoint multiple times with the same parameters will not result in duplicate resources being created.
+
+Payment Systems: Idempotency is used in payment systems to prevent duplicate charges. If a payment system is designed to charge a customer's credit card, making the operation idempotent means that if the operation is retried due to a network failure, it will not result in the customer being charged multiple times.
+
+Cache Systems: Idempotency can be used in cache systems to prevent inconsistent data. If a cache system is designed to store the result of an operation, making the operation idempotent means that if the operation is retried, the cache system will return the same result instead of overwriting the cache with different data.
+
+Messaging Systems: Idempotency can be used in messaging systems to ensure that messages are delivered exactly once. If a messaging system is designed to deliver a message, making the operation idempotent means that if the message is retried, it will not result in duplicate deliveries.
+
+In summary, idempotency is a useful property in distributed systems and is applied in various areas, including APIs, payment systems, cache systems, and messaging systems, to prevent unintended or duplicate operations and ensure data consistency.
