@@ -1,0 +1,37 @@
+It is the process of fetching data from a server/ checking if a communication device is connected, at frequent and regular intervals.
+Polling is used in applications where data needs to be fetched from a server at regular intervals. For example, data of the number of reads of an article on Medium.
+
+How polling work?
+
+Polling is a technique used in computer systems to check for the status of a device or process at regular intervals. It involves repeatedly sending requests to the device or process to determine if it is ready to send or receive data.
+
+Here's a simplified example of how polling works:
+
+A computer system sends a request to a device, asking it to perform a task or send data.
+The device responds with a message indicating that it has received the request.
+The computer system repeatedly sends requests to the device at regular intervals, asking if it is ready to perform the task or send data.
+The device responds with a message indicating that it is ready to perform the task or send data.
+The computer system sends the data or command to the device, and the process is completed.
+Polling can be used in a variety of contexts, such as:
+
+Input/output (I/O) operations: In computer systems, polling can be used to check the status of I/O devices, such as keyboards, mice, and printers, to determine if they are ready to receive or send data.
+
+Network communication: Polling can be used to check the status of network devices or servers, such as checking if a website is available or a file server is online.
+
+Process management: Polling can also be used to monitor the status of processes running on a system, such as checking if a database query has completed or a background process has finished its task.
+
+While polling is a simple and effective technique for checking the status of devices or processes, it can also be resource-intensive and inefficient, especially in large-scale systems. As an alternative, more advanced techniques, such as interrupt-driven I/O and event-driven programming, can be used to reduce the overhead and improve system performance.
+
+Polling and its application:
+
+Polling is a common technique used in various applications to check the status of devices or processes. Here are some examples of how polling is used in different contexts:
+
+Input/output (I/O) operations: Polling is often used to check the status of I/O devices such as keyboards, mice, and printers. For example, a computer might use polling to check if a keyboard is ready to send data, and then retrieve the keystrokes from the keyboard. In this way, polling allows a computer to communicate with I/O devices and respond to user inputs.
+
+Network communication: Polling can be used to check the status of network devices or servers. For example, a web browser might use polling to check if a website is available by repeatedly sending requests to the website's server until it receives a response. Polling can also be used to monitor network traffic and detect potential network issues.
+
+Process management: Polling is often used in process management to check the status of running processes. For example, a database server might use polling to check if a query has completed, or a background process might use polling to check if it has finished its task. In this way, polling allows processes to communicate with each other and coordinate their actions.
+
+Sensors and devices: Polling is also used in various types of sensors and devices to monitor their status and retrieve data. For example, a temperature sensor might use polling to periodically check the temperature and send the data to a monitoring system. Similarly, a smart home device might use polling to check if a user has issued a command, such as turning on a light.
+
+Overall, polling is a versatile technique used in a wide range of applications to monitor the status of devices or processes. While it can be an effective method, it can also be resource-intensive and inefficient, particularly in large-scale systems. As a result, other techniques, such as interrupts and event-driven programming, are often used to reduce overhead and improve system performance.
