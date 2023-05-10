@@ -3,3 +3,43 @@ Think of this as a directory of phone numbers
 
 When you type www.google.com (domain name) in your browser, a request is sent to a DNS server. This server returns the corresponding IP address for this domain name i.e.
 216.58.212.206 . This IP address is requested for the required resources used to display Google’s homepage.
+
+
+how domain name system work?
+
+The Domain Name System (DNS) is a hierarchical, decentralized naming system for computers, services, or any resource connected to the internet or a private network. Here's how DNS works:
+
+Requesting a Domain Name: When you type a domain name (such as "google.com") in your web browser, your computer sends a query to a DNS resolver, asking for the IP address associated with that domain name.
+
+Recursive Query: If the DNS resolver does not have the IP address associated with the domain name in its cache, it sends a recursive query to the root DNS servers. The root DNS servers respond with the IP address of the top-level domain (TLD) server for the domain name.
+
+TLD Query: The DNS resolver then sends a query to the TLD server for the domain name (such as ".com" for "google.com"). The TLD server responds with the IP address of the authoritative DNS server for the domain name.
+
+Authoritative Query: The DNS resolver then sends a query to the authoritative DNS server for the domain name (which is typically operated by the domain owner or a hosting provider). The authoritative DNS server responds with the IP address associated with the domain name.
+
+Response: The DNS resolver caches the IP address associated with the domain name and returns it to the client, allowing the client to connect to the server hosting the website.
+
+TTL: The IP address associated with the domain name is cached by the DNS resolver for a specific time period, known as the Time To Live (TTL). When the TTL expires, the DNS resolver will need to perform another DNS lookup to retrieve the updated IP address.
+
+In summary, the DNS system resolves domain names to IP addresses by sending recursive queries to a hierarchy of DNS servers, starting from the root DNS servers and ending with the authoritative DNS server for the domain name. DNS caching is used to speed up the resolution process and reduce the load on the DNS infrastructure.
+
+domain name system and its application
+
+
+The Domain Name System (DNS) is a hierarchical decentralized naming system for computers, services, or any resource connected to the internet or a private network. DNS maps human-readable domain names to IP addresses, which are used by computers to locate and communicate with each other on the internet.
+
+Here are some of the applications of the Domain Name System:
+
+Web Browsing: When you type a domain name in your web browser, the DNS system resolves the domain name to the IP address of the server hosting the website. This allows your browser to connect to the server and retrieve the website's content.
+
+Email: DNS is used for email delivery. The DNS system maps domain names to the IP addresses of the mail servers responsible for handling email for that domain. This allows email messages to be routed to the correct server and delivered to the intended recipient.
+
+VoIP: DNS is used in Voice over Internet Protocol (VoIP) systems to locate the IP address of the recipient's device. This allows for real-time voice communication over the internet.
+
+File Sharing: DNS is used in peer-to-peer (P2P) file-sharing systems to locate other users' devices and connect to them to download or upload files.
+
+Content Delivery Networks (CDNs): DNS is used by content delivery networks (CDNs) to route user requests to the closest server with the requested content. This reduces the latency and improves the performance of websites and applications.
+
+Internet of Things (IoT): DNS is used to manage the connection and communication between IoT devices, allowing them to communicate with each other and with other devices on the internet.
+
+In summary, the Domain Name System (DNS) plays a critical role in the functioning of the internet and enables a wide range of applications, including web browsing, email, VoIP, file sharing, content delivery networks, and the Internet of Things.
