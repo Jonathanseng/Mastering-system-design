@@ -1,2 +1,31 @@
 It is the process of duplicating critical components of a system (for example, the database of a web application) to increase its reliability.
 It eliminates single points of failure in the system.
+
+
+How redundancy work?
+
+Redundancy is a technique used to increase the reliability and fault-tolerance of systems by introducing additional components or pathways that can take over if a primary component fails. Here are some examples of how redundancy works in different contexts:
+
+Data storage: In a RAID system, data is distributed across multiple disks, and each disk has a redundant copy of the data. If one disk fails, the data can still be accessed from the redundant copy on another disk.
+
+Network communication: Redundant routers or switches can be used to provide multiple pathways for data to travel. If one device fails, the data can be routed through another device instead.
+
+Power supply: Backup generators or batteries can be used to provide power in the event of a power outage or other issue. If the primary power source fails, the backup system can take over.
+
+Control systems: Redundant components can be used to ensure that critical functions can continue to operate even if a component fails. For example, aircraft control systems might have redundant sensors or control surfaces that can take over if a primary component fails.
+
+Overall, redundancy works by providing additional components or pathways that can take over if a primary component fails. This can increase the reliability and fault-tolerance of systems, but it can also increase complexity and cost. When designing systems that use redundancy, it's important to balance the benefits of increased reliability with the costs and complexity of the redundant components.
+
+redundancy and its application:
+
+Redundancy is a technique used in various systems and applications to increase reliability and ensure that critical functions can continue to operate even if certain components fail. Here are some examples of how redundancy is used in different contexts:
+
+Data storage: Redundancy is often used in data storage systems to protect against data loss due to hardware failures or other issues. One common example is RAID (redundant array of independent disks), which uses multiple disks to store data and provides redundancy by duplicating data across multiple disks.
+
+Network communication: Redundancy can be used to increase the reliability of network communication by providing multiple pathways for data to travel. For example, a network might use redundant routers or switches to ensure that data can still be transmitted even if one device fails.
+
+Power supply: Redundancy is often used in power supply systems to ensure that critical functions can continue to operate even if there is a power outage or other issue. For example, data centers might use backup generators or batteries to provide power in the event of a power failure.
+
+Control systems: Redundancy is also used in control systems to ensure that critical functions can continue to operate even if a component fails. For example, aircraft control systems might use redundant sensors or control surfaces to ensure that the plane can still fly safely even if a component fails.
+
+Overall, redundancy is a powerful technique that can increase the reliability and resilience of systems and applications. However, it can also be expensive and complex to implement, and it may not always be necessary depending on the specific requirements of the system or application.
