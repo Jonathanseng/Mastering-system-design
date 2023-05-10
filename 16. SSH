@@ -1,1 +1,26 @@
 SSH or Secure Shell Protocol is used to securely access a remote computer node from another, over an unsecured network.
+
+
+how ssh work?
+
+SSH works by establishing a secure, encrypted connection between two computers, allowing users to access and control a remote computer as if they were sitting in front of it.
+
+When a user initiates an SSH connection, the client computer sends a request to the server computer to establish a connection. The server computer responds with its public key, which the client computer uses to encrypt a random session key. The encrypted session key is sent back to the server, which uses its private key to decrypt the session key.
+
+Once the session key has been exchanged, the client and server computers use it to encrypt all further communication between them. This provides a secure, encrypted channel for the user to access and control the remote computer.
+
+SSH also provides a number of authentication methods to ensure that only authorized users can access the remote computer. These may include password authentication, public key authentication, and other methods.
+
+Overall, SSH provides a secure and reliable way for users to remotely access and control computers over unsecured networks, such as the internet.
+
+ssh and its application:
+
+SSH (Secure Shell) is a network protocol that provides secure communication between two computers. It allows users to access and control a remote computer over an unsecured network, such as the internet, as if they were physically sitting in front of it.
+
+The primary application of SSH is remote access to servers and other networked devices. It is widely used by system administrators, developers, and other IT professionals to securely access and manage remote servers and other networked devices.
+
+SSH is also used for secure file transfer, allowing users to securely transfer files between computers. It is often used in combination with other tools, such as scp (secure copy) and sftp (secure file transfer protocol).
+
+Another important application of SSH is port forwarding, which allows users to securely tunnel traffic from one computer to another over an encrypted SSH connection. This can be used to access remote services, such as web servers, that are not directly accessible over the internet.
+
+SSH also provides a number of other security features, such as encryption and authentication, which help to protect sensitive information from being intercepted or tampered with during transmission.
