@@ -1,2 +1,36 @@
 This is the time taken by an operation to complete in a system/ the time between the cause and effect in a system.
 For example, the time duration between you clicking the ‘Login’ button and getting redirected to your Facebook homepage, denotes the latency of Facebook’s servers (grossly).
+
+how latency work:
+
+Latency refers to the amount of time it takes for a data packet to travel from its source to its destination. It is a measure of the delay or lag that can occur when data is transmitted over a network.
+
+Here are some ways in which latency works:
+
+Transmission time: The time it takes for a data packet to be transmitted over a network is influenced by the distance between the source and destination, the speed of the network, and the size of the data packet. For example, a larger data packet will take longer to transmit than a smaller one.
+
+Processing time: The time it takes for a network device, such as a router or switch, to process a data packet can also contribute to latency. This can be influenced by the processing power and memory capacity of the device, as well as any congestion or traffic on the network.
+
+Propagation time: The time it takes for a data packet to travel between two points on a network can also be influenced by the physical properties of the transmission medium, such as the speed of light or the resistance of copper wire.
+
+Round-trip time: Latency can also be measured as the time it takes for a data packet to travel from the source to the destination and back again. This is known as round-trip time (RTT) and is often used as a measure of network performance.
+
+Application-specific latency: Different applications have different requirements for latency. For example, a video conferencing application may require low latency to ensure smooth real-time communication, while a file transfer application may be more tolerant of higher latency.
+
+Overall, latency is a key factor in network performance and can have a significant impact on the user experience. By understanding the factors that contribute to latency, network administrators and developers can optimize their networks and applications to minimize latency and improve performance.
+
+latency and its application:
+
+Latency, or the delay in data transmission between two points on a network, can have a significant impact on a variety of applications. Here are some examples of how latency affects different types of applications:
+
+Online gaming: Latency is critical in online gaming, as it can affect the responsiveness and accuracy of player actions. Even a small delay in data transmission can make a game feel sluggish or unresponsive, leading to frustration for players.
+
+Video conferencing: Video conferencing applications require low latency to ensure smooth, real-time communication between participants. Any delay in data transmission can result in stuttering video or audio, making it difficult to have a productive conversation.
+
+Stock trading: In financial markets, even small delays in data transmission can have a significant impact on trading decisions. High-frequency traders, for example, rely on low-latency networks to gain an edge over their competitors and execute trades quickly.
+
+Cloud computing: Latency can be a concern in cloud computing environments, particularly for applications that require real-time processing or data analysis. For example, a machine learning application may require low latency to process data and make predictions in real time.
+
+Website performance: Latency can also affect website performance, particularly for applications that rely on real-time data, such as chat or messaging services. A slow website can lead to a poor user experience and lost revenue for businesses.
+
+Overall, latency is a key factor in the performance of many applications, particularly those that require real-time processing or data transmission. By optimizing their networks and applications to minimize latency, developers and network administrators can improve the user experience and ensure the smooth operation of critical systems.
