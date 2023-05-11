@@ -1,0 +1,46 @@
+These are the transactions within a DBMS (BASE compliant) that ensure the following properties:
+
+1. Basic Availability: Database availability is ensured by spreading and replicating it across different database cluster nodes
+
+2. Soft State: The database does not have to offer immediate consistency
+
+3. Eventual Consistency: The database offers consistency at a later point in time
+No SQL database like Cassandra, MongoDB, and Redis are usually BASE compliant.
+
+The ACID transaction model provides consistency.
+The BASE transaction model provides high availability.
+
+How base transaction work?
+
+Base transactions ensure data integrity and consistency in a database management system by following the ACID properties: Atomicity, Consistency, Isolation, and Durability.
+
+Atomicity: A base transaction is an indivisible operation that is executed entirely or not at all. It means that if any part of the transaction fails, the entire transaction is rolled back to its original state. The database management system guarantees that the transaction is atomic, meaning the transaction is either committed or rolled back completely.
+
+Consistency: A base transaction ensures that the database remains in a consistent state before and after the transaction. It means that the transaction should not violate any integrity constraints or business rules defined for the database. If any constraint or rule is violated, the transaction is rolled back, and the database is left in its original state.
+
+Isolation: A base transaction ensures that the operations performed by one transaction are isolated from other transactions. It means that the changes made by one transaction should not affect the changes made by other transactions until the first transaction is completed successfully. This property is important to prevent conflicts and ensure that the database remains consistent.
+
+Durability: A base transaction ensures that the changes made by a transaction are permanent and cannot be lost, even in the event of a system failure. It means that once the transaction is committed, the changes are saved to disk and can be retrieved even if the system crashes.
+
+To ensure the ACID properties, the database management system implements a mechanism known as the transaction manager. The transaction manager is responsible for coordinating the execution of transactions, ensuring that they are executed in a controlled and consistent manner. When a transaction is started, the transaction manager assigns a unique identifier to the transaction and creates a transaction log, which records all the operations performed by the transaction. The transaction log is used to undo or redo the operations performed by the transaction in case of a system failure.
+
+Once a transaction is completed successfully, the transaction manager commits the transaction, which makes the changes permanent and updates the database. If a transaction fails, the transaction manager rolls back the transaction, undoing all the operations performed by the transaction, and leaves the database in its original state.
+
+In summary, a base transaction is an atomic operation that ensures data integrity and consistency in a database management system by following the ACID properties. The transaction manager coordinates the execution of transactions, ensuring that they are executed in a controlled and consistent manner.
+
+
+Base transaction and its application:
+
+As mentioned earlier, a base transaction is an atomic operation that either completes successfully or fails completely, leaving the database in a consistent state. The concept of base transactions is essential to ensure data integrity and consistency in database management systems.
+
+In a database, a transaction can be defined as a sequence of operations that perform one or more database actions, such as inserting, updating, or deleting data. A base transaction is a single database action that is indivisible and treated as a single unit of work. It is executed entirely or not at all, and any errors or exceptions that occur during the transaction cause it to be rolled back to its original state.
+
+The application of base transactions is critical in various industries that rely on database management systems. Here are some examples:
+
+Banking: In the banking industry, base transactions are used to ensure the integrity and consistency of financial transactions, such as deposits, withdrawals, and transfers. Each transaction is treated as a base transaction, ensuring that all the changes made to the database are atomic and consistent.
+
+E-commerce: In the e-commerce industry, base transactions are used to ensure the consistency and accuracy of orders, payments, and inventory updates. Each transaction, such as placing an order, updating a product's stock, or processing a payment, is treated as a base transaction to ensure that all changes are atomic and consistent.
+
+Healthcare: In the healthcare industry, base transactions are used to ensure the integrity and consistency of patient records and medical data. Each transaction, such as adding a new patient record or updating medical information, is treated as a base transaction to ensure that all changes are atomic and consistent.
+
+Overall, base transactions are essential in ensuring data integrity and consistency in database management systems, particularly in critical applications that require reliable and accurate data processing. By using base transactions, you can ensure that database operations are executed in a controlled and consistent manner, minimizing the risk of data corruption or loss.
