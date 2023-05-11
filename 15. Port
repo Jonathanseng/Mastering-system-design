@@ -1,1 +1,28 @@
 It is a number allocated to uniquely identify a connection endpoint of a computer and to direct data to a specific service such as SMTP (Port 25/587), DNS (Port 53) etc.
+
+How port in system design work?
+
+In system design, a port is a logical construct used to identify a specific process or service on a networked device. It allows the device to receive and send data over a network connection.
+
+Ports are identified by a unique number, called a port number, which is associated with a specific protocol, such as TCP or UDP. When a client device initiates a network connection to a server, it specifies the destination IP address and port number of the server it wishes to communicate with. The server then listens on that port number for incoming connections, and when a connection request is received, it accepts the connection and begins exchanging data with the client.
+
+Here's an example of how a port works in system design:
+
+Let's say you want to access a web server that is hosting a website. The web server is listening on port 80, which is the standard port number for HTTP traffic. To access the website, you would enter the server's IP address and port number in your web browser's address bar, like this: http://192.0.2.1:80/. The browser would then establish a TCP connection to the web server's IP address on port 80, and request the web page. The server would respond with the requested web page, which the browser would then display.
+
+Ports are also used in other networking protocols, such as FTP (port 21), SMTP (port 25), SSH (port 22), and many others. In practice, many applications and services use non-standard port numbers to avoid conflicts with other applications, and to provide additional security by making it harder for attackers to discover and exploit vulnerabilities in a system.
+
+Port in system design and its application
+
+
+In system design, a port is a communication endpoint that allows processes or services to exchange data with each other over a network. A port is identified by a number, called the port number, which is assigned to a specific protocol (such as TCP or UDP) and a specific IP address.
+
+Here are some applications of ports in system design:
+
+Network protocols: Ports are used in network protocols to identify specific applications or services that are running on a host. For example, web servers typically listen on port 80 for HTTP requests, while email servers listen on port 25 for SMTP traffic.
+
+Firewalls: Ports are used in firewalls to control access to specific services or applications that are running on a host. A firewall can be configured to allow or deny incoming traffic to specific ports based on predefined rules.
+
+Load balancing: Ports are used in load balancing to distribute incoming traffic among multiple instances of a service or application. A load balancer can listen on a single port and forward incoming traffic to different backend servers based on predefined rules or algorithms.
+
+In practice, ports are often combined with IP addresses to form socket addresses, which uniquely identify a communication endpoint in a network. In Python, sockets can be created using the built-in socket module, which allows programmers to implement low-level network protocols or build higher-level abstractions on top of them.
