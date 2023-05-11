@@ -1,2 +1,38 @@
 A type of reverse proxy that helps distribute incoming requests across servers that are part of a system.
 An example of a popular reverse proxy and load balancer is Nginx.
+
+How load balancing work?
+
+Load balancing works by distributing incoming network traffic across multiple resources, such as servers or network links, to optimize resource utilization, maximize throughput, minimize response time, and avoid overload on any single resource.
+
+Here are the general steps involved in load balancing:
+
+Incoming requests: The load balancer receives incoming requests from clients, such as web browsers or mobile apps.
+
+Routing algorithm: The load balancer uses a routing algorithm to determine which resource to send each incoming request to. Different algorithms can be used, such as round-robin, least connections, IP hash, and others.
+
+Resource selection: The load balancer selects a resource to handle the request based on the routing algorithm. For example, it may choose the server with the fewest active connections or the server with the fastest response time.
+
+Request forwarding: The load balancer forwards the incoming request to the selected resource, which processes the request and generates a response.
+
+Response forwarding: The resource sends the response back to the load balancer, which in turn forwards it back to the client.
+
+Monitoring and health checks: The load balancer continually monitors the health of the resources to ensure they are available and able to handle incoming requests. If a resource becomes unavailable or overloaded, the load balancer can remove it from the pool of available resources and redirect traffic to other resources.
+
+Load balancing can be done at different layers of the networking stack, such as the application layer, transport layer, and network layer. The choice of layer depends on the specific requirements of the system and the load balancing technique being used.
+
+Overall, load balancing is an important technique for improving the availability, scalability, and performance of distributed systems, and it can be implemented using various technologies and tools, such as hardware load balancers, software load balancers, reverse proxies, and content delivery networks (CDNs).
+
+Load balancing and its application:
+
+Load balancing is the process of distributing incoming network traffic across multiple servers or resources to optimize resource utilization, maximize throughput, minimize response time, and avoid overload on any single resource. Load balancing is commonly used in web applications, cloud computing, content delivery networks, and other distributed systems.
+
+Load balancing helps to improve the availability and scalability of the system by ensuring that no single resource is overwhelmed with traffic. It also helps to improve fault tolerance and prevent downtime by distributing traffic across multiple resources. Load balancing can be done at different layers of the networking stack, such as the application layer, transport layer, and network layer.
+
+One popular approach to load balancing is to use a dedicated load balancer device or software that sits between the clients and the servers. The load balancer can use different algorithms to determine which server to send each incoming request to, such as round-robin, least connections, IP hash, and others.
+
+Another approach is to use anycast routing, where multiple servers share the same IP address and network traffic is automatically routed to the nearest server based on the network topology.
+
+Load balancing can be implemented using various technologies and tools, such as hardware load balancers, software load balancers, reverse proxies, and content delivery networks (CDNs).
+
+Some examples of load balancing technologies and tools include NGINX, Apache HTTP Server, HAProxy, Amazon Elastic Load Balancer, Google Cloud Load Balancing, and Microsoft Azure Load Balancer.
