@@ -1,1 +1,38 @@
 FTP or File Transfer Protocol is used to send and receive files between computer nodes.
+
+How FTP work?
+
+FTP (File Transfer Protocol) works by establishing a connection between a client and a server over a network, and then transferring files between the two.
+
+Here is a step-by-step breakdown of how FTP works:
+
+A client initiates an FTP connection to a server, typically using an FTP client software.
+The client sends a connection request to the server over port 21, which is the standard FTP control port.
+The server responds to the connection request, and a control channel is established between the client and the server. This channel is used to exchange commands and responses, such as login credentials and file transfer requests.
+The client sends a login request to the server, providing a username and password to authenticate themselves.
+If the login is successful, the client can now browse the server's file system and perform file transfer operations.
+When the client requests to upload a file, the server opens a new data channel over port 20 (by default) and provides the client with the port number for the data channel.
+The client connects to the data channel and begins transferring the file to the server.
+Once the file transfer is complete, the server closes the data channel and sends a confirmation message to the client over the control channel.
+Similarly, when the client requests to download a file, the server opens a new data channel and sends the file to the client over the data channel.
+The client receives the file and sends a confirmation message to the server over the control channel.
+Once the file transfer is complete, the client can close the FTP connection.
+FTP also supports various commands and settings that can be used to configure the FTP session and control the file transfer process, such as setting transfer modes (binary or ASCII), setting transfer types (active or passive), and changing directories.
+
+FTP and its application
+
+FTP (File Transfer Protocol) is a standard protocol used for transferring files over a network. It is commonly used in client-server applications, where a client can connect to a server to upload or download files.
+
+In system design, FTP can be used in various applications such as:
+
+Web development - to upload and download website files to a web server.
+Data backup and recovery - to transfer data between servers or to backup data to a remote server.
+Media distribution - to transfer large files such as video and audio files to clients or end-users.
+FTP works by establishing a connection between a client and a server over a network. The client typically uses an FTP client software to connect to the server and transfer files. Once connected, the client can browse the server's file system, and upload or download files as needed.
+
+FTP uses two channels to transfer data: a control channel and a data channel. The control channel is used to send commands between the client and the server, such as login credentials and file transfer requests. The data channel is used to transfer the actual file data.
+
+FTP also supports various security mechanisms, such as SSL/TLS encryption and SSH tunneling, to protect the data being transferred.
+
+In addition to the standard FTP protocol, there are also several variations and extensions of FTP, such as SFTP (Secure FTP), FTPS (FTP over SSL), and TFTP (Trivial FTP).
+
