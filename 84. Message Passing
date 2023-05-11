@@ -1,0 +1,81 @@
+It is a technique of passing instructions to invoke behavior on a system without directly contacting it.
+Message passing can be:
+
+1. Synchronous: Between objects running at the same time
+
+2. Asynchronous: Between objects that may not be active/ready to execute commands at the same time when
+an instruction is received Message passing can include:
+
+3. Local objects: Where sender and receiver are on the same system
+
+4. Distributed objects: Where sender and receiver are on different computers / run a different OS or programming language (for example, Remote procedure call)
+
+How message passing work?
+
+In message passing, components communicate by sending and receiving messages. The sender component constructs a message containing some data and sends it to a recipient component, which receives and processes the message. The message passing mechanism can be implemented using different communication channels, such as shared memory, sockets, pipes, or message queues.
+
+The basic steps involved in message passing are:
+
+Message creation: The sender component constructs a message containing some data that needs to be communicated to the recipient component. The message may also contain metadata, such as the sender and recipient addresses, message ID, timestamp, and other information.
+
+Message transmission: The sender component transmits the message to the recipient component using a communication channel, such as a socket or message queue. The sender may block until the message is successfully transmitted, or it may continue processing while the message is being sent asynchronously.
+
+Message reception: The recipient component waits for incoming messages on a communication channel, such as a socket or message queue. When a message arrives, the recipient component reads and processes the message contents. The recipient may also send a response message back to the sender, creating a two-way communication channel.
+
+Message processing: The recipient component processes the received message, which may involve performing some computation, updating data structures, triggering events, or sending further messages to other components. The recipient component may also send an acknowledgement message back to the sender, indicating that the message was received and processed successfully.
+
+The implementation of message passing can vary depending on the specific requirements and constraints of the system. For example, in a distributed system, message passing may need to handle network delays, message loss, and node failures, while in an event-driven system, message passing may need to handle high message rates, event ordering, and concurrency.
+
+Some advantages of message passing include modularity, flexibility, and scalability, as components can communicate independently of their physical location and implementation details. Message passing can also support different communication patterns, such as one-to-one, one-to-many, or many-to-many, and can facilitate fault tolerance, load balancing, and other system properties.
+
+Message Passing and its application:
+
+Message passing is a fundamental concept in system design that involves the exchange of data between different components of a system. In message passing, the sender component constructs a message containing some data and sends it to a recipient component, which receives and processes the message. Message passing can be implemented using different communication mechanisms, such as shared memory, sockets, pipes, or message queues.
+
+Some common applications of message passing in system design include:
+
+Inter-process communication: Message passing is used to enable communication between different processes running on the same or different machines. For example, a web server can use message passing to forward requests from clients to worker processes that handle the requests and send back the responses.
+
+Event-driven programming: Message passing is often used in event-driven programming models, where components react to events by sending and receiving messages. For example, a graphical user interface can use message passing to handle user input events and update the display accordingly.
+
+Distributed systems: Message passing is a key mechanism in distributed systems, where different nodes communicate and coordinate with each other to achieve a common goal. For example, a distributed database system can use message passing to replicate data across different nodes and ensure consistency and availability.
+
+The implementation of message passing in system design can vary depending on the specific requirements and constraints of the system. In some cases, a simple message passing API may suffice, while in others, more complex protocols and middleware may be needed to handle reliability, fault tolerance, and other aspects.
+
+Here is an example Python code that demonstrates basic message passing using the built-in queue module:
+
+import threading
+import queue
+
+# Define a shared message queue
+message_queue = queue.Queue()
+
+# Define a sender thread that sends messages to the queue
+def sender_thread():
+    while True:
+        # Wait for user input
+        message = input("Enter a message: ")
+
+        # Add the message to the queue
+        message_queue.put(message)
+
+# Define a receiver thread that receives messages from the queue
+def receiver_thread():
+    while True:
+        # Wait for a message to arrive in the queue
+        message = message_queue.get()
+
+        # Process the message
+        print("Received message: " + message)
+
+# Start the sender and receiver threads
+sender = threading.Thread(target=sender_thread)
+receiver = threading.Thread(target=receiver_thread)
+sender.start()
+receiver.start()
+
+# Wait for the threads to finish (never happens in this example)
+sender.join()
+receiver.join()
+
+This code defines two threads: a sender thread that waits for user input and adds messages to a shared message queue, and a receiver thread that waits for messages to arrive in the queue and processes them by printing them to the console. The threads are started in the main program, and the program waits for them to finish (which never happens in this example). This simple example illustrates the basic concept of message passing using a shared queue, but in practice, more complex synchronization and error handling mechanisms may be needed to ensure correct and efficient communication between components.
