@@ -1,1 +1,45 @@
 SMTP or Simple Mail Transfer Protocol is a protocol that is used to send an email over the internet.
+
+
+How smtp work?
+
+SMTP (Simple Mail Transfer Protocol) works by using a client-server model to transfer email messages between servers. Here's a basic overview of how SMTP works:
+
+Sender's email client or application connects to their outgoing mail server using SMTP.
+
+The sender's mail server initiates a conversation with the recipient's mail server over the internet via TCP/IP protocol on port 25.
+
+The sender's mail server sends a "HELO" command to the recipient's mail server to initiate the conversation and identify itself.
+
+The recipient's mail server responds with a "250 OK" message to acknowledge the connection and readiness to receive the message.
+
+The sender's mail server sends the recipient's email address and the sender's email address to the recipient's mail server.
+
+The recipient's mail server checks the email address to ensure that it is valid and authorized.
+
+The sender's mail server sends the email message to the recipient's mail server.
+
+The recipient's mail server accepts the email message and sends a "250 OK" message to acknowledge the receipt of the message.
+
+The recipient's mail server stores the email message and delivers it to the recipient's email inbox.
+
+SMTP uses a series of commands and responses to transfer email messages between servers. These commands and responses are sent as text messages over the internet, which is why SMTP is considered a text-based protocol. By using this protocol, SMTP enables email messages to be sent quickly and efficiently between servers, making it an essential part of the email system.
+
+SMTP and its application:
+
+
+SMTP (Simple Mail Transfer Protocol) is a protocol used for sending email messages between servers. SMTP is the standard protocol used for sending email messages over the Internet, and it is used by most email clients and servers.
+
+SMTP is used to transfer messages between mail servers, and it operates on port 25. SMTP is a simple text-based protocol, and it uses a series of commands and responses to send email messages.
+
+SMTP is used in many different applications, including:
+
+Email Clients: Most email clients (such as Microsoft Outlook and Apple Mail) use SMTP to send email messages.
+
+Web Applications: Web applications that send email messages (such as online shopping websites that send order confirmation emails) often use SMTP to send the emails.
+
+Marketing Tools: Email marketing tools (such as Mailchimp and Constant Contact) use SMTP to send large numbers of emails to subscribers.
+
+System Alerts: Some systems (such as servers and network devices) use SMTP to send system alerts and notifications.
+
+Overall, SMTP is a critical component of the email system, and it is essential for sending email messages reliably and efficiently.
