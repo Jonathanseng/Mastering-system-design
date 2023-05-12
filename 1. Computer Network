@@ -1,5 +1,6 @@
 It is a set of computers sharing resources with each other.
 Each computer in the network is called a Node and these can be connected with each other with wire or by wireless technology.
 Some examples of networks are :
-!"Local Area Network (LAN): Connects computer in a small area
-!"Wide Area Network (WAN): Connects computers over a large geographical area e.g. the Internet
+
+1. Local Area Network (LAN): Connects computer in a small area
+2. Wide Area Network (WAN): Connects computers over a large geographical area e.g. the Internet
