@@ -1,9 +1,0 @@
-Big Data refers to structured/unstructured data that is too big in volume/ too complex to be processed and analyzed by a modern computer.
-Keep in mind that there is no set threshold above which data is considered big data.
-Big Data is represented by 3Vs:
-
-1. Volume: Big Data is large enough not to be handled by the available computation capacity (Consider health data produced by Apple Watches for all customers combined)
-
-2. Velocity: Big data is produced quickly ( Consider the number of Tweets produced each day)
-
-3. Variety: Big data includes structured (database tables, JSON) and unstructured data (audio, video, images)
