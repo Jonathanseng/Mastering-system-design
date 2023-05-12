@@ -1,0 +1,38 @@
+It is a collection of software utilities used in distributed computing for storage and processing of massive amount of data (Big Data).
+It consists of:
+
+1. a storage part i.e. Hadoop Distributed File System (HDFS)
+2. a processing part i.e. MapReduce programming model
+
+
+How apache hadoop work?
+
+Apache Hadoop is an open-source framework for distributed storage and processing of large datasets. Here's a high-level overview of how Hadoop works:
+
+Hadoop Distributed File System (HDFS): Hadoop's distributed file system is responsible for storing and managing large datasets across a cluster of machines. The file system breaks the data into blocks and stores multiple copies of each block across the cluster for fault tolerance.
+
+MapReduce: Hadoop's MapReduce framework provides a distributed computing model for processing large datasets. MapReduce involves breaking a computation into smaller tasks that can be distributed across the cluster, with the results then aggregated into a final output.
+
+Job tracker: The Hadoop job tracker is responsible for coordinating and scheduling MapReduce jobs across the cluster.
+
+Task tracker: Each machine in the Hadoop cluster runs a task tracker, which is responsible for executing MapReduce tasks assigned to it by the job tracker.
+
+Hadoop ecosystem: Hadoop has a rich ecosystem of tools and technologies built on top of the core Hadoop components, including Pig, Hive, and HBase, which provide higher-level interfaces for working with Hadoop data.
+
+In summary, Hadoop works by storing and managing large datasets across a cluster of machines using HDFS, and processing the data using the MapReduce framework. The Hadoop job tracker coordinates and schedules MapReduce jobs across the cluster, while each machine runs a task tracker to execute MapReduce tasks. Hadoop also has a rich ecosystem of tools and technologies for working with data in a distributed environment.
+
+Apache hadoop and its application:
+
+Apache Hadoop is a powerful tool for distributed storage and processing of large datasets. Here are some common applications of Hadoop:
+
+Big data processing: Hadoop is commonly used for processing and analyzing large volumes of data, such as web logs, social media data, or sensor data. Hadoop's distributed computing model enables efficient processing of data across a cluster of machines.
+
+Data warehousing: Hadoop can be used for building data warehouses that store and process large amounts of structured and unstructured data. Hadoop's HDFS file system can handle data in various formats, and tools such as Hive and Pig provide SQL-like interfaces for querying and analyzing data.
+
+Machine learning: Hadoop can be used for building machine learning models on large datasets. Tools such as Mahout and Spark's MLlib provide algorithms and libraries for building and training machine learning models in a distributed environment.
+
+Log processing: Hadoop can be used for processing and analyzing log data from various sources, such as web servers, network devices, or application servers. This enables organizations to gain insights into system performance, security, and usage.
+
+Real-time processing: Hadoop can be used for real-time processing of streaming data, such as social media feeds or sensor data. Tools such as Storm and Spark Streaming enable real-time processing of data streams in a distributed environment.
+
+In summary, Hadoop is a powerful tool for distributed storage and processing of large datasets, and it has a wide range of applications across various industries and use cases.

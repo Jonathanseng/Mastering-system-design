@@ -1,5 +1,0 @@
-It is a collection of software utilities used in distributed computing for storage and processing of massive amount of data (Big Data).
-It consists of:
-
-1. a storage part i.e. Hadoop Distributed File System (HDFS)
-2. a processing part i.e. MapReduce programming model
