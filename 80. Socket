@@ -1,2 +1,32 @@
 It is one of the end-points of a two-way communication link between two nodes on a computer network.
 Each socket is identified by an address composed of the transport protocol (TCP/ UDP), an IP address, and a port number.
+
+how Socket in system design work
+
+In system design, sockets are a software component that enables communication between two processes over a network. The two processes can be on the same computer or on different computers connected by a network.
+
+In the context of a client-server model, a socket allows a client to connect to a server and communicate with it. The server creates a listening socket on a specified network address and port, and waits for a client to connect to it. Once a client connects, the server creates a new socket to handle the communication with that client. The server can then use this socket to send data to the client or receive data from it.
+
+Similarly, the client creates a socket to connect to the server. It specifies the network address and port of the server, and then creates a socket that is used to communicate with the server. The client can then use this socket to send data to the server or receive data from it.
+
+The socket API provides a set of functions that allow programmers to use sockets in their applications. In Python, the socket module provides an implementation of the socket API. The socket module allows programmers to create, connect, send, and receive data over sockets.
+This example shows how sockets can be used to establish a connection between a client and a server, send data from the server to the client, and then close the connection.
+
+In summary, sockets provide a low-level API for network communication, allowing programmers to build a wide variety of networked applications, including web servers, chat applications, gaming applications, and many others.
+
+
+socket and its application
+
+Sockets are a communication mechanism that allows processes to communicate with each other over a network. In system design, sockets are used for various applications, such as:
+
+Client-Server Communication: Sockets are used in client-server applications where clients send requests to the server and the server responds with the required data.
+
+Real-time Communication: Sockets are used for real-time communication applications such as chat applications, video conferencing, and online gaming.
+
+File Transfer: Sockets are used for file transfer applications where files are transferred from one device to another.
+
+Web Communication: Sockets are used in web applications to communicate with web servers.
+
+IoT Applications: Sockets are used in IoT applications for device-to-device communication.
+
+Overall, sockets provide a reliable and efficient way for processes to communicate with each other over a network, making them a critical component in system design.
