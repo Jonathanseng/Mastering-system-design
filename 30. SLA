@@ -1,2 +1,36 @@
 It is an agreement of service between a service provider and the customer in view of Service level objectives/ SLO (performance metrics).
 For example, the SLA between us and Amazon with high availability and security as SLOs when we store image data on AWSS3.
+
+
+How sla work?
+
+A Service Level Agreement (SLA) is a contract between a service provider and a customer that outlines the level of service that the provider will deliver. SLAs typically specify the service level objectives (SLOs) that the provider must meet, and may also include penalties or incentives for meeting or failing to meet those objectives.
+
+Here is how an SLA typically works:
+
+Define the service: The service provider and the customer define the scope of the service that will be covered by the SLA, including the types of services provided, the expected levels of service, and the timeframes in which those services will be delivered.
+
+Specify service level objectives: The SLA specifies the SLOs that the provider must meet in order to fulfill the terms of the agreement. SLOs may include availability, performance, response time, and other metrics that are important to the customer.
+
+Establish monitoring and reporting procedures: The SLA may specify how the provider will monitor and report on its performance against the SLOs. This may include regular reports, performance dashboards, and other monitoring tools.
+
+Define the consequences of non-compliance: The SLA may include penalties or incentives for meeting or failing to meet the SLOs. Penalties may include service credits or refunds, while incentives may include bonuses or other rewards.
+
+Review and revise the SLA: The SLA should be reviewed regularly to ensure that it remains up-to-date and relevant to the needs of the customer and the provider. Changes to the SLA may be made through a change management process that includes input from both parties.
+
+Overall, SLAs are important tools for ensuring that service providers deliver the level of service that their customers expect. By defining clear service level objectives and establishing monitoring and reporting procedures, SLAs provide a framework for measuring and improving service quality, and for resolving disputes when issues arise.
+
+
+SLA and its application:
+
+In system design, a Service Level Agreement (SLA) is a contract between a service provider and a customer that outlines the level of service that the provider will deliver. An SLA typically includes metrics for availability, performance, and support that the service provider must meet.
+
+The SLA serves as a way to set expectations between the service provider and the customer, and to establish accountability for meeting those expectations. The SLA also provides a framework for monitoring and reporting on service levels, and for resolving disputes if the service provider fails to meet the agreed-upon levels of service.
+
+In the context of system design, SLAs are commonly used in the design and implementation of cloud-based systems and services, where the service provider is responsible for maintaining the infrastructure and delivering the service to the customer.
+
+An SLA can be used to define the availability of a service, measured in terms of uptime and downtime. For example, an SLA might specify that a service must be available at least 99.9% of the time, or no more than 43 minutes of downtime per month. The SLA might also specify response times for support requests, such as a requirement to respond to a critical issue within one hour.
+
+SLAs can also be used to define performance metrics, such as response time or throughput. For example, an SLA might specify that a web application must respond to requests within two seconds, or that a data transfer must achieve a minimum throughput of 1 Gbps.
+
+Overall, SLAs are an important part of system design as they provide a way to ensure that the service provider is delivering the level of service that the customer expects. SLAs help to establish clear communication between the service provider and the customer, and provide a mechanism for resolving issues when they arise.
