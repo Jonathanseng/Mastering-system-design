@@ -1,3 +1,41 @@
 Non-volatile (data persists when power is switched off) memory to store data for a long time.
 Disk usually refers to HDD (hard disk drive) or SSD (solid-state drive).
 SSDs are faster but more expensive than HDDs.
+
+How disk secondary storage work?
+
+Disk secondary storage, also known as hard disk drives (HDDs), is a type of non-volatile storage used for long-term storage of digital data. HDDs consist of one or more spinning disks, or platters, coated with a magnetic material, and read/write heads that move across the surface of the disks to read and write data.
+
+Here's a simplified overview of how a disk secondary storage works:
+
+The user's computer sends a request to read or write data to the hard disk drive.
+
+The read/write heads of the hard disk drive move to the correct location on the disk where the data is stored.
+
+If the request is to read data, the read/write heads magnetically read the data from the disk and send it back to the computer's memory.
+
+If the request is to write data, the read/write heads magnetically write the data to the disk.
+
+The hard disk drive's controller manages the read/write operations and ensures that the data is stored in the correct location on the disk.
+
+The hard disk drive also has firmware that manages the drive's operations, such as handling errors and managing power consumption.
+
+Overall, hard disk drives are a reliable and affordable way to store large amounts of data, but they are slower than other types of storage, such as solid-state drives (SSDs), due to the mechanical movement required to read and write data.
+
+disk secondary storage and its application:
+
+Disk secondary storage, also known as hard disk drives (HDDs), are commonly used for long-term storage of digital data in various applications. Here are some of the applications of disk secondary storage:
+
+Personal computers: Hard disk drives are used as the primary storage device in personal computers, where they store the operating system, programs, and personal data files.
+
+Enterprise storage: In enterprise storage systems, hard disk drives are used to store large amounts of business-critical data such as customer information, financial records, and other important data.
+
+Media storage: HDDs are used for storing large multimedia files such as movies, music, and photographs. They are commonly used in media servers, digital video recorders, and other media streaming devices.
+
+Gaming: Hard disk drives are used to store video games, game data, and other game-related content. High-speed HDDs are preferred for gaming as they offer fast read/write speeds that enhance game performance.
+
+Data centers: Hard disk drives are widely used in data centers to store large amounts of data. They are used for storing backups, archives, and other important data that needs to be accessed frequently.
+
+Surveillance systems: Hard disk drives are commonly used in surveillance systems for storing video footage from security cameras. They are designed to handle continuous recording and have a long lifespan, making them suitable for this application.
+
+Overall, disk secondary storage is widely used for long-term data storage in various applications due to their reliability, durability, and affordability.
