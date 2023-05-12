@@ -1,0 +1,31 @@
+It is a network of computer nodes that communicate with each other to distribute the workload of a task and improve efficiency.
+P2P networks can function with or without a central entity.
+
+How P2P work
+
+In a P2P network, each node has the ability to act as both a client and a server. This means that nodes can initiate requests for resources or data from other nodes in the network, as well as respond to requests from other nodes.
+
+To initiate a request for a resource, a node will typically broadcast a query message to all other nodes in the network. Each node that receives the query will then check its own database to see if it has the requested resource. If it does, the node will respond to the requesting node with the resource or a pointer to the location of the resource.
+
+If a node does not have the requested resource, it may forward the query message to other nodes in the network in order to increase the chances of finding the resource. This process continues until the resource is found, or until it is determined that the resource is not available in the network.
+
+Once a node has obtained the requested resource, it may also begin to act as a server by making the resource available to other nodes in the network. This allows for more efficient and decentralized sharing of resources, as each node can act as a source of data for other nodes in the network.
+
+It's important to note that in a P2P network, there is no centralized authority or server that manages the network or controls access to resources. Instead, each node is responsible for maintaining its own database of resources and for sharing those resources with other nodes in the network. This decentralized structure allows for greater scalability, resilience, and efficiency compared to centralized network architectures.
+
+
+P2P and its application
+
+P2P, or peer-to-peer, is a distributed network architecture in which each participant, or peer, has equal privileges and responsibilities in the network. P2P networks enable direct communication and file sharing between peers without the need for a centralized server.
+
+There are several applications of P2P networks, including:
+
+File sharing: P2P networks are commonly used for sharing large files, such as music and video files. Popular P2P file-sharing applications include BitTorrent and eMule.
+
+Collaboration: P2P networks can be used for collaborative work, such as sharing documents and collaborating on a project. Applications like IPFS enable users to store and share files across a decentralized network.
+
+Communication: P2P networks can also be used for communication, such as peer-to-peer messaging or voice and video chat. Applications like Skype and Zoom use P2P technology to enable real-time communication between users.
+
+Gaming: P2P networks are used in online gaming to enable real-time multiplayer gaming between players.
+
+Overall, P2P networks provide a decentralized and distributed approach to computing, enabling greater scalability and fault tolerance compared to traditional client-server architectures.
