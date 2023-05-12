@@ -1,0 +1,41 @@
+It is a computing model where different computers in a network communicate with each other, divide tasks, and work towards a common goal as a unified system.
+
+How distributed computing work?
+
+Distributed computing is a computing model in which multiple computers work together to solve a problem or perform a task. The computers are connected over a network, and they communicate and coordinate with each other to complete the work. Here's how distributed computing works:
+
+Task decomposition: The problem or task is divided into smaller sub-tasks that can be executed in parallel. These sub-tasks are assigned to different nodes in the network.
+
+Communication and coordination: The nodes in the network communicate and coordinate with each other to execute their sub-tasks. This involves exchanging data and messages, synchronizing their progress, and resolving conflicts or errors that may arise.
+
+Computation: Each node executes its assigned sub-tasks using its own computing resources. The results of these sub-tasks are aggregated and combined to produce the final result.
+
+Result distribution: The final result is distributed to the nodes that need it, either for further processing or for presenting the result to the user.
+
+There are several challenges that must be addressed in distributed computing, including:
+
+Data distribution and management: The data used by the nodes in the network must be distributed efficiently and stored securely.
+
+Network communication: The nodes in the network must be able to communicate reliably and efficiently, even in the presence of network failures or congestion.
+
+Load balancing: The sub-tasks must be assigned to nodes in a way that balances the load and ensures that no node is overwhelmed with work.
+
+Fault tolerance: The system must be able to handle failures of individual nodes or network components, and continue to operate without disruption.
+
+Overall, distributed computing enables efficient processing and storage of large volumes of data, and allows organizations to scale their computing resources as needed. It is a key technology for handling the demands of modern data-intensive applications.
+
+distributed computing and its application
+
+Distributed computing is a computing model in which multiple computers work together to solve a problem or perform a task. The computers are connected over a network, and they communicate and coordinate with each other to complete the work. Here are some common applications of distributed computing:
+
+Big data processing: Distributed computing is often used to process large volumes of data in parallel across multiple nodes. This is done using frameworks like Apache Hadoop and Apache Spark, which distribute data and computation across a cluster of machines.
+
+Distributed storage: Distributed computing is also used for distributed storage, where data is spread across multiple nodes for redundancy and scalability. This is done using distributed file systems like Hadoop Distributed File System (HDFS) and GlusterFS.
+
+Cloud computing: Cloud computing is a type of distributed computing in which computing resources (e.g. servers, storage, applications) are provided over the internet. Cloud computing allows users to access scalable computing resources on-demand, without the need to invest in their own infrastructure.
+
+Internet of Things (IoT): IoT devices often generate large amounts of data that need to be processed and analyzed in real-time. Distributed computing can be used to process this data at scale, using edge computing and fog computing architectures.
+
+Distributed simulations: Distributed computing can be used for running simulations in fields like physics, biology, and engineering. Simulation data can be distributed across multiple nodes for faster processing and more accurate results.
+
+Overall, distributed computing enables efficient processing and storage of large volumes of data, and allows organizations to scale their computing resources as needed. It is a key technology for handling the demands of modern data-intensive applications.
