@@ -1,6 +1,42 @@
 These are the transactions within a DBMS (ACID compliant) that ensure the following properties:
-!"Atomicity: Each transaction either succeed and performs a task it is intended to do in a database or fails completely leaving the database in its original state.
-!"Consistency: On completion of a transaction, the database should be in a valid/structurally sound state to ensure consistency
-!"Isolation: Concurrent execution of transactions should cause the same changes in a database as would have been caused if the transactions were executed sequentially
-!"Durability: Completed transactions should persist in the database even in the case of network partition or power failure
+
+1. Atomicity: Each transaction either succeed and performs a task it is intended to do in a database or fails completely leaving the database in its original state.
+
+2. Consistency: On completion of a transaction, the database should be in a valid/structurally sound state to ensure consistency
+
+3. Isolation: Concurrent execution of transactions should cause the same changes in a database as would have been caused if the transactions were executed sequentially
+
+4. Durability: Completed transactions should persist in the database even in the case of network partition or power failure
 SQL databases are usually ACID compliant.
+
+
+how Acid transaction work?
+
+
+
+In system design, ACID transactions work by ensuring that database operations are executed in a way that maintains consistency and reliability, even in the face of failures or concurrent access.
+
+When a database transaction is executed, it is treated as a single, atomic unit of work. This means that either all of the operations within the transaction are executed successfully, or none of them are. If a failure occurs during the transaction, the database will be rolled back to its previous state, ensuring that the data remains consistent.
+
+In addition to atomicity, ACID transactions also ensure consistency by enforcing constraints and rules on the data. This means that any modifications made to the data during the transaction must be consistent with the overall structure of the database, ensuring that the data remains accurate and reliable.
+
+Isolation is also an important property of ACID transactions, as it ensures that concurrent transactions are executed in a way that does not interfere with each other. This means that transactions can be executed simultaneously without causing conflicts or inconsistencies in the data.
+
+Finally, ACID transactions also ensure durability by ensuring that once a transaction is committed, its changes are permanent and will survive any subsequent failures or crashes. This means that the data written during a transaction must be stored in a way that ensures its long-term durability, even if the system experiences power failures or other types of failures.
+
+Overall, ACID transactions provide a high level of reliability and consistency in system design by ensuring that database operations are executed in a way that maintains the integrity of the data, even in the face of failures or concurrent access.
+
+
+ACID transaction and its application:
+
+ACID stands for Atomicity, Consistency, Isolation, and Durability, and refers to a set of properties that are desirable in database transactions. In system design, ACID transactions are used to ensure that database operations are reliable and consistent, even in the face of failures or concurrent access.
+
+Atomicity refers to the property that a transaction is treated as a single, indivisible unit of work. Either all of the operations within the transaction are executed successfully, or none of them are. This ensures that the database remains in a consistent state, even if a failure occurs during the transaction.
+
+Consistency refers to the property that a transaction brings the database from one valid state to another. This means that any constraints or rules defined on the data must be maintained during the transaction.
+
+Isolation refers to the property that concurrent transactions are executed in a way that preserves the consistency of the database. This means that concurrent transactions should not interfere with each other or cause conflicts that violate the consistency or atomicity of the database.
+
+Durability refers to the property that once a transaction is committed, its changes are permanent and will survive any subsequent failures or crashes. This means that the data written during a transaction must be stored in a way that ensures its long-term durability, even if the system experiences power failures or other types of failures.
+
+In system design, ACID transactions are commonly used in databases to ensure that data is stored reliably and consistently, even in the face of failures or concurrent access. By ensuring that transactions are atomic, consistent, isolated, and durable, databases can provide a high level of reliability and consistency, which is essential for many types of applications, including financial systems, e-commerce platforms, and more.
