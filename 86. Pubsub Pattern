@@ -1,0 +1,48 @@
+It is an architectural pattern that consists of:
+
+1. Publishers
+
+2. Subscribers
+
+3. Topics / Logical Channels 
+
+4. Messages
+Publishers create messages and broadcast them to different Topics.
+Subscribers are linked to their Topics of interest and receive messages from them.
+
+This is a method of message passing where services (publishers and subscribers) can asynchronously communicate with each other without ever achieving direct communication.
+PubSub is usually a part of a larger message-oriented middleware system.
+
+How pubsub pattern work
+
+The pubsub pattern works by separating the senders (publishers) of messages from the receivers (subscribers) of those messages. Here's how it works in more detail:
+
+Publishers create messages and publish them to one or more topics. Topics are essentially channels that messages can be sent to. A topic can have one or more publishers, and any number of subscribers can listen to messages published to that topic.
+
+Subscribers express interest in one or more topics and receive all messages published to those topics. Subscribers do not need to know the identity of publishers, as they simply listen to the topics they are interested in.
+
+When a publisher publishes a message to a topic, the pubsub system will distribute the message to all subscribers listening to that topic.
+
+Subscribers receive messages in real-time and can process them as needed.
+
+Pubsub systems can be implemented in a variety of ways, including using message brokers or message queues. Some popular pubsub systems include Apache Kafka, Google Cloud Pub/Sub, and RabbitMQ.
+
+Overall, the pubsub pattern provides a flexible and scalable way for distributed systems to communicate in real-time, allowing components to be decoupled and enabling parallel processing of messages.
+
+pubsub pattern and its application
+
+The publish-subscribe (pubsub) pattern is a messaging pattern used in distributed systems, where senders of messages, called publishers, do not send messages directly to specific receivers, called subscribers, but instead publish messages to one or more topics. Subscribers then express interest in one or more topics and receive all messages published to those topics. Here are some of the applications of the pubsub pattern:
+
+Event-driven architectures: Pubsub is used for building event-driven architectures, where events are published to topics and subscribers consume those events to trigger actions or updates.
+
+Real-time data processing: Pubsub is used for real-time data processing, where data is published to topics and subscribers consume that data to process it in real-time.
+
+Decoupled communication: Pubsub enables decoupled communication between components in a distributed system, where publishers and subscribers do not need to be aware of each other's existence.
+
+Scalability and availability: Pubsub allows for horizontal scaling of publishers and subscribers, as well as high availability of messages and subscriptions.
+
+Monitoring and logging: Pubsub can be used for centralized monitoring and logging of events and messages, allowing for easy analysis and troubleshooting.
+
+Chat and messaging systems: Pubsub is used in chat and messaging systems, where messages are published to channels or groups and subscribers receive those messages in real-time.
+
+Overall, the pubsub pattern is a versatile messaging pattern that can be used for a wide range of applications that require real-time communication, decoupling of components, scalability, and availability.
