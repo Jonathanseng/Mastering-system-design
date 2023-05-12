@@ -1,9 +1,0 @@
-It is a programming model that is implemented for processing large distributed datasets.
-Grossly, it consists of three steps:
-
-1. Map: The programmer specifies a map function that generates a set of key/value pairs from different parts of a distributed dataset
-
-2. Intermediate steps (Shuffle/ Sort/ Partition): This step reorganizes the key-value pairs to facilitate the Reduce step.
-
-3. Reduce: A reduce function merges all shuffled intermediate values associated with the same intermediate key to creating the desired final data
-Read more about MapReduce in the original whitepaper by Google:
