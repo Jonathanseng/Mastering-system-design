@@ -1,0 +1,33 @@
+It is the single unit of logic or work that is performed within a database management system.
+
+How database transaction work?
+
+Database transactions work by grouping together a series of database operations into a single unit of work. These operations may include inserting, updating, or deleting data from one or more tables in the database.
+
+A database transaction typically follows the ACID (Atomicity, Consistency, Isolation, and Durability) properties to ensure the reliability and consistency of the data. Here's how it works:
+
+Begin transaction: The first step in a transaction is to begin it. This marks the start of the transaction and creates a new transaction context. All subsequent database operations will be executed within this context until the transaction is either committed or rolled back.
+
+Execute database operations: Once the transaction has begun, database operations can be executed. These operations may include inserting, updating, or deleting data from one or more tables in the database. Each operation is executed within the transaction context, which means that it is not visible to other transactions until the transaction is committed.
+
+Commit or rollback transaction: Once all the database operations have been executed, the transaction can either be committed or rolled back. If the transaction is committed, all the changes made during the transaction are written to the database and become visible to other transactions. If the transaction is rolled back, all the changes made during the transaction are discarded, and the database is restored to its original state before the transaction began.
+
+ACID properties: During the transaction, the ACID properties are maintained. Atomicity ensures that all the database operations are executed as a single, indivisible unit of work. Consistency ensures that the database remains in a valid state before and after the transaction. Isolation ensures that the transaction does not interfere with other concurrent transactions, and durability ensures that once the transaction is committed, its changes are permanent and will survive any subsequent failures or crashes.
+
+Overall, database transactions provide a reliable and consistent way to manage data in a database. By grouping together a series of database operations into a single unit of work and ensuring the ACID properties are maintained, transactions ensure that data remains accurate and reliable, even in the face of failures or concurrent access.
+
+Database transaction and its application
+
+A database transaction is a sequence of database operations that are executed as a single, indivisible unit of work. In other words, a transaction is a collection of database operations that are treated as a single unit, which either all succeed or all fail. Transactions are important in database applications because they ensure data consistency and reliability, even in the face of failures or concurrent access.
+
+Applications of database transactions include:
+
+Banking and financial systems: Transactions are critical for financial systems, where data integrity and reliability are paramount. Transactions ensure that any updates or changes to account balances, for example, are executed correctly and consistently.
+
+E-commerce platforms: Transactions are essential for e-commerce platforms, where multiple users may be simultaneously accessing the system to place orders, update their account details, or purchase products. Transactions ensure that the data remains consistent and accurate, even if multiple users are making changes at the same time.
+
+Healthcare systems: Healthcare systems rely on transactions to ensure that patient data is accurate and consistent. For example, a transaction might be used to update a patient's medical record with new test results, medications, or other important information.
+
+Supply chain management: Transactions are critical for managing inventory and tracking shipments in supply chain management systems. Transactions ensure that changes to inventory levels, shipping status, or other data are executed consistently and accurately.
+
+To implement transactions in a database application, database management systems provide transaction management features that ensure that database operations are executed in a way that maintains consistency and reliability. These features typically include the ability to begin a transaction, commit a transaction, and roll back a transaction in the event of an error or failure. Transaction management features also include mechanisms for ensuring isolation and concurrency control, which prevent multiple transactions from interfering with each other or causing conflicts that violate the consistency of the database.
