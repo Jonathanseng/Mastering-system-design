@@ -1,0 +1,84 @@
+It is an architectural pattern that allows asynchronous inter- application communication.
+A messaging queue (that allows FIFO operations) is used as middleware to send messages (blocks of information/instructions) between message creators/senders and message receivers.
+
+How  Message Oriented Middleware work
+
+Message Oriented Middleware (MOM) is a software layer that provides a mechanism for exchanging messages between different applications or components of a distributed system. It is based on the idea of decoupling the sender and receiver of a message, so that they do not need to know each other's details, such as their location, programming language, or operating system.
+
+MOM works by providing a set of services that enable applications to send and receive messages. These services typically include:
+
+Message Queuing: A message queue is a data structure that holds messages until they are processed by the intended receiver. Message queues are used to ensure reliable delivery of messages, as well as to provide load balancing and scalability.
+
+Publish-Subscribe: The publish-subscribe model allows multiple subscribers to receive messages from a single publisher. The publisher sends messages to a topic or channel, and subscribers can choose which topics or channels they want to receive messages from.
+
+Message Routing: Message routing allows messages to be sent to their intended destination, regardless of their location or network topology. This is achieved through the use of routing tables or brokers that can forward messages to the appropriate destination.
+
+MOM is often used in distributed systems, where applications need to communicate with each other over a network. It provides a way to decouple the sender and receiver of a message, making it easier to maintain and update the system without affecting other components.
+
+MOM can be implemented using different technologies, such as JMS (Java Messaging Service), AMQP (Advanced Message Queuing Protocol), MQTT (Message Queuing Telemetry Transport), and more.
+
+Here's an example of how to use MOM with Python using the pika library:
+
+python
+Copy code
+import pika
+
+# Create a connection to the MOM server
+connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
+channel = connection.channel()
+
+# Create a queue to receive messages
+channel.queue_declare(queue='hello')
+
+# Define a callback function to process messages
+def callback(ch, method, properties, body):
+    print("Received message: %r" % body)
+
+# Register the callback function to receive messages
+channel.basic_consume(queue='hello', on_message_callback=callback, auto_ack=True)
+
+# Start consuming messages
+print('Waiting for messages. To exit press CTRL+C')
+channel.start_consuming()
+In this example, we first import the pika library, which provides an API for interacting with MOM servers that support the AMQP protocol.
+
+We then create a connection to the MOM server by passing in the address of the server. We create a channel, which is used to send and receive messages.
+
+We create a queue called "hello" using the channel.queue_declare() method. We define a callback function called callback() that will be invoked when a message is received. This function simply prints out the message body.
+
+We register the callback function to receive messages using the channel.basic_consume() method. We pass in the name of the queue we created, as well as the callback function.
+
+Finally, we start consuming messages using the channel.start_consuming() method. This will block until a message is received, and will invoke the callback function for each message received.
+
+Note that in a real-world application, you would likely have multiple queues, exchanges, and routing rules, as well as more complex message processing logic. However, this simple example should give you an idea of how to use MOM with Python using the pika library.
+MOM Message Oriented Middleware and its application
+
+Message Oriented Middleware (MOM) is a software layer that enables communication between distributed applications by exchanging messages. MOM is designed to decouple the sender and receiver of messages, making it possible to build more resilient and flexible distributed systems.
+
+MOM provides a number of features and capabilities that make it well-suited to a variety of applications. Some of the key features of MOM include:
+
+Reliable messaging: MOM provides mechanisms to ensure reliable delivery of messages, including message queuing, acknowledgments, and message persistence.
+
+Asynchronous messaging: MOM supports asynchronous messaging, which allows applications to send and receive messages without blocking on I/O operations.
+
+Message filtering and routing: MOM provides mechanisms to filter and route messages based on their content, allowing messages to be selectively delivered to specific recipients.
+
+Scalability: MOM provides mechanisms for load balancing and scaling distributed systems, such as message replication and partitioning.
+
+Security: MOM provides security features to protect message content and ensure that only authorized recipients can access messages.
+
+MOM can be used in a variety of applications, including:
+
+Financial systems: MOM can be used to support real-time trading systems, where rapid and reliable message delivery is critical.
+
+Telecommunications systems: MOM can be used to support messaging in telecommunications systems, such as SMS and MMS messaging.
+
+Healthcare systems: MOM can be used to support messaging in healthcare systems, such as medical devices and electronic health record systems.
+
+Logistics systems: MOM can be used to support messaging in logistics systems, such as real-time tracking of packages and inventory management.
+
+Internet of Things (IoT) systems: MOM can be used to support messaging in IoT systems, such as sensor networks and smart homes.
+
+MOM can be implemented using a variety of middleware technologies, including Java Messaging Service (JMS), Advanced Message Queuing Protocol (AMQP), Message Queue Telemetry Transport (MQTT), and more.
+
+Overall, MOM provides a flexible and powerful mechanism for building distributed applications that require reliable and scalable messaging.
