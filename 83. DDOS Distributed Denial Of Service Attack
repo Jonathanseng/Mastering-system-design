@@ -1,0 +1,35 @@
+This is a type of DoS attack where the incoming requests towards a system are sent from multiple different sources.
+Read an interesting article about Google’s defense against a Botnet DDoS attack:
+
+How Ddos work?
+
+A Distributed Denial of Service (DDoS) attack is a type of cyber attack in which a large number of computers, devices or networks (known as a botnet) are used to overwhelm a targeted website or server with traffic, rendering it inaccessible to users. Here's how a typical DDoS attack works:
+
+The attacker identifies a target website or server that they want to disrupt or take offline.
+The attacker then creates a botnet by infecting a large number of computers or devices with malware, often by exploiting security vulnerabilities or using social engineering tactics.
+Once the botnet is created, the attacker uses it to flood the target website or server with a huge volume of traffic, far more than it can handle.
+This flood of traffic overwhelms the target's resources, making it unable to respond to legitimate requests and causing it to become inaccessible to users.
+There are several different types of DDoS attacks, including:
+
+Volumetric attacks: These attacks flood the target with a huge amount of traffic, such as through a botnet or using amplification techniques like DNS reflection.
+Protocol attacks: These attacks exploit weaknesses in the target's network protocols to consume its resources and render it inaccessible.
+Application layer attacks: These attacks target the web application layer of the target, often by sending a large number of requests that cause the application to crash or become unresponsive.
+DDoS attacks can have serious consequences for businesses and organizations, including financial losses, damage to reputation, and loss of user trust. Defending against DDoS attacks requires a multi-layered approach, including firewalls, intrusion detection systems, and content delivery networks.
+
+DDos and its application
+
+A Distributed Denial of Service (DDoS) attack is a type of cyber attack that can be used for a variety of malicious purposes, including:
+
+Extortion: Attackers can threaten to launch a DDoS attack against a business or organization unless they pay a ransom or meet some other demand.
+Political activism: Hacktivist groups or individuals may launch DDoS attacks against websites or servers to protest or disrupt certain policies or practices.
+Cyber warfare: Nation-states or other actors may use DDoS attacks to disrupt the operations of an enemy's critical infrastructure or to distract from other cyber attacks.
+Cybercrime: Criminals can use DDoS attacks to disrupt the operations of a competitor or to create a diversion while they carry out another attack, such as stealing sensitive data.
+DDoS attacks can be devastating for businesses and organizations, causing financial losses, damage to reputation, and loss of user trust. They can also be difficult to defend against, as the attacker may be able to use a large and constantly changing botnet to overwhelm the target's defenses.
+
+To defend against DDoS attacks, businesses and organizations can take several steps, including:
+
+Implementing a DDoS protection service or solution that can detect and mitigate attacks in real time.
+Increasing network capacity to better handle sudden spikes in traffic.
+Using firewalls, intrusion detection systems, and other security measures to block traffic from known malicious sources.
+Educating employees about the dangers of phishing and other social engineering tactics that can be used to create a botnet.
+Overall, defending against DDoS attacks requires a multi-layered approach that combines technical defenses with user education and awareness.
