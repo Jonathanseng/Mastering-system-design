@@ -1,3 +1,0 @@
-Many P2P networks use a hash table distributed to all nodes.
-This records the assignment of ownership of a task resource to apeer.
-Other peers can then search for resources on the P2P network using this DHT.

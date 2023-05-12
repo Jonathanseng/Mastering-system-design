@@ -1,0 +1,53 @@
+Many P2P networks use a hash table distributed to all nodes.
+This records the assignment of ownership of a task resource to apeer.
+Other peers can then search for resources on the P2P network using this DHT.
+
+how  Distributed Hash Table work
+
+A Distributed Hash Table (DHT) is a decentralized distributed system that provides a lookup service similar to a hash table. The key idea behind a DHT is to map keys to nodes in the network. Each node in the network maintains a routing table that maps a subset of the keys to nodes in the network.
+
+DHTs are used for various applications such as file sharing, peer-to-peer networking, and content distribution.
+
+Here's a high-level overview of how a DHT works:
+
+Nodes join the network by connecting to one or more existing nodes.
+Each node generates a unique identifier (ID) that is a large random number or hash value.
+The keyspace is divided into a set of key ranges, and each node is responsible for a subset of these key ranges.
+Each node maintains a routing table that allows it to efficiently route requests for keys to other nodes in the network.
+When a node receives a request for a key that it does not have, it uses its routing table to forward the request to a node that is responsible for that key range.
+Nodes periodically update their routing tables to reflect changes in the network.
+
+Distributed Hash Table and its application
+
+A Distributed Hash Table (DHT) is a decentralized method for organizing a large number of keys and values. It is a peer-to-peer (P2P) system that allows nodes in a network to store and retrieve data in a distributed and fault-tolerant manner. In a DHT, each node is responsible for storing a small part of the overall key-value data, and the routing of data to the correct node is achieved using a hash function.
+
+One of the most well-known applications of DHT is in BitTorrent, which uses a DHT to maintain a list of peers for each torrent file. Other applications of DHT include content distribution networks, distributed file systems, and messaging systems.
+
+Here is an example of how a DHT might be implemented in Python using the built-in hashlib module:
+
+import hashlib
+
+class DHT:
+    def __init__(self, nodes):
+        self.nodes = nodes
+        self.data = {}
+
+    def put(self, key, value):
+        node = self._find_node(key)
+        node_data = self.data.get(node, {})
+        node_data[key] = value
+        self.data[node] = node_data
+
+    def get(self, key):
+        node = self._find_node(key)
+        node_data = self.data.get(node, {})
+        return node_data.get(key)
+
+    def _find_node(self, key):
+        hash_val = hashlib.sha256(str(key).encode()).hexdigest()
+        index = int(hash_val, 16) % len(self.nodes)
+        return self.nodes[index]
+
+
+
+This implementation uses SHA-256 as the hash function to map keys to nodes in the network. The put() method stores a key-value pair in the DHT by finding the node responsible for the given key and adding the data to its local storage. The get() method retrieves the value associated with a given key by finding the node responsible for that key and looking up the value in its local storage. The _find_node() method uses the hash function to map keys to nodes in the network based on their hash value.
