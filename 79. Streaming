@@ -3,3 +3,27 @@ It is the process of establishing a continuous communication link between two co
 This allows the flow of data from a server node to a client node without the client node making regular requests to the server node.
 The server node ‘pushes’ data to the client node whenever there is a state change.
 Streaming is commonly used by chat applications.
+
+How streaming in system design work
+
+Streaming in system design typically involves breaking up a continuous data stream into smaller, manageable chunks called "micro-batches". These micro-batches are then processed in real-time, allowing for near-instantaneous analysis and insights.
+
+The streaming process often involves several stages, such as data ingestion, processing, and output. These stages may be executed in parallel across a cluster of machines to enable high throughput and scalability.
+
+In the data ingestion stage, the streaming system may collect data from various sources, such as IoT devices or social media feeds. The data is typically stored in a distributed system, such as a distributed file system or a NoSQL database, for efficient storage and retrieval.
+
+In the processing stage, the streaming system applies various transformations and computations to the data. These computations may be performed in parallel across multiple machines to enable fast and efficient processing. Common processing techniques include filtering, aggregating, joining, and windowing.
+
+Finally, in the output stage, the streaming system may send the processed data to various destinations, such as a dashboard, a database, or another system. The output may be visualized or analyzed in real-time, allowing for immediate insights and actions.
+
+Overall, streaming in system design allows organizations to process and analyze real-time data streams quickly and efficiently, enabling them to make informed decisions and take action more quickly than with batch processing techniques.
+
+streaming and its application
+
+Streaming in system design refers to the processing of real-time data streams, typically by dividing them into smaller data sets called "micro-batches". Streaming systems are designed to handle and process data as it is generated, providing real-time insights and analytics.
+
+One application of streaming in system design is in the field of IoT (Internet of Things), where devices generate real-time data streams that need to be processed and analyzed in real-time. Another application is in the financial industry, where high-frequency trading generates real-time market data that must be processed quickly to make informed decisions.
+
+Streaming systems are often designed to be fault-tolerant, scalable, and highly available. They may use distributed computing frameworks such as Apache Flink, Apache Spark Streaming, or Apache Kafka Streams to process data streams in parallel across a cluster of machines.
+
+Overall, streaming in system design allows for real-time processing of data streams, enabling organizations to gain insights and take action more quickly than with batch processing techniques.
