@@ -1,3 +1,33 @@
 It is a strategy used to scale a database by creating replicas of it.
 Each of the replicated instances supports reading from and writing to the database.
 This strategy can lead to the creation of conflicts (creation of two rows with the same ID) when writing to the database.
+
+how it work?
+
+Multi Master Replication Strategy is a technique used in distributed database systems to replicate data across multiple nodes, where each node can process both read and write operations. This strategy enables any node in the cluster to accept write requests and modify data, as opposed to the Primary Replica Replication Strategy where only one node is designated as the primary replica and is responsible for processing write requests.
+
+In the Multi Master Replication Strategy, each node in the cluster maintains a complete copy of the database and is responsible for ensuring that changes made locally are propagated to all other nodes in the cluster. When a write operation is performed on one node, it is propagated to all other nodes in the cluster using a replication protocol.
+
+In order to ensure consistency and prevent conflicts, the Multi Master Replication Strategy employs various techniques such as conflict detection and resolution. When conflicts arise, the strategy will use a set of predefined rules to determine which version of the data to keep.
+
+One of the key benefits of the Multi Master Replication Strategy is that it provides a high level of scalability and availability, as any node can accept write requests and modify data. This strategy is commonly used in distributed systems that require high write throughput and low latency, such as e-commerce platforms and social media applications.
+
+However, the Multi Master Replication Strategy also has some potential drawbacks, such as the increased complexity of maintaining consistency across multiple nodes and the potential for conflicts to arise if changes are made simultaneously on different nodes. Careful planning and monitoring are required to ensure that this strategy is implemented effectively and that data remains consistent across all nodes in the cluster.
+
+its application
+
+Multi Master Replication Strategy is a popular technique for data replication in distributed database systems where each node can perform both read and write operations. This strategy offers several benefits such as high availability, low latency, and scalability.
+
+Here are some common applications of Multi Master Replication Strategy:
+
+E-commerce platforms: E-commerce platforms require high write throughput and low latency to provide a seamless shopping experience to customers. Multi Master Replication Strategy can be used to replicate product information, customer orders, and other data across multiple nodes, allowing for fast and reliable processing of transactions.
+
+Social media applications: Social media applications generate a large volume of user-generated content that needs to be replicated across multiple nodes. Multi Master Replication Strategy can be used to replicate user profiles, posts, and messages across multiple nodes, enabling fast and reliable access to data.
+
+Gaming applications: Gaming applications require high-performance data processing capabilities to provide a smooth gaming experience to users. Multi Master Replication Strategy can be used to replicate game data, user profiles, and in-game transactions across multiple nodes, enabling fast and reliable processing of game data.
+
+Financial services: Financial services require high availability and low latency to ensure smooth and uninterrupted processing of transactions. Multi Master Replication Strategy can be used to replicate financial transaction data across multiple nodes, enabling fast and reliable processing of transactions.
+
+Healthcare applications: Healthcare applications require fast and reliable access to patient data and other medical information. Multi Master Replication Strategy can be used to replicate medical records, patient information, and other data across multiple nodes, enabling fast and reliable access to data.
+
+Overall, Multi Master Replication Strategy is suitable for any application that requires high availability, low latency, and scalability. However, it also requires careful planning and monitoring to ensure data consistency and prevent conflicts from arising.
