@@ -1,1 +1,27 @@
 It is when the response to a client’s request is not found in the server cache.
+
+How cache miss work?
+
+A cache miss occurs when a requested item is not found in a cache memory and must be fetched from a slower source of data. The following is a general overview of how cache misses work:
+
+The system first checks the cache memory for the requested item. If the item is stored in the cache, it can be retrieved quickly without the need to fetch it from a slower source of data.
+
+If the requested item is not found in the cache memory, a cache miss occurs. The system then fetches the item from a slower source of data, such as main memory or disk storage.
+
+Once the item is fetched from the slower source of data, it is stored in the cache memory so that it can be retrieved quickly the next time it is requested.
+
+If the cache memory is full and no more space is available, the system may use a cache eviction policy to decide which items should be removed from the cache to make room for new items.
+
+Cache misses can have a significant impact on system performance, especially in systems with large amounts of data that are frequently accessed. To minimize the impact of cache misses, system designers may use various strategies such as increasing the size of the cache, using multiple levels of caching, and optimizing cache replacement policies to ensure that frequently accessed data is stored in the cache and that cache misses are minimized.
+
+cache miss and its application
+
+In computer science, a cache miss occurs when a requested item is not found in a cache memory, and instead must be fetched from a slower source of data. This can happen in a variety of contexts, including CPU caches, disk caches, and web caches.
+
+Caching is a common technique used to improve the performance of computer systems. By storing frequently accessed data in a cache memory, rather than fetching it from a slower source every time it is needed, systems can reduce the overall access time for that data. However, cache misses can reduce the effectiveness of caching by increasing the amount of time needed to access data that is not stored in the cache.
+
+One application of cache misses is in the context of web caching. Web caching is a technique used to improve the performance of web applications by storing frequently accessed web pages and resources in a cache memory. When a user requests a web page, the system checks the cache to see if the page is already stored there. If it is, the page can be served directly from the cache, without the need to fetch it from the web server. This can significantly reduce the page load time for the user.
+
+However, if the requested page is not stored in the cache, a cache miss occurs. The system must then fetch the page from the web server, which can take significantly longer than serving it from the cache. To minimize the impact of cache misses on web performance, web caching systems typically use a variety of strategies, such as eviction policies and cache replacement algorithms, to ensure that frequently accessed pages are stored in the cache and that the cache is efficiently managed.
+
+Another application of cache misses is in the context of CPU caching. CPU caches are used to store frequently accessed instructions and data in a small, high-speed memory, to reduce the time needed to fetch data from main memory or disk storage. However, if a requested item is not stored in the cache, a cache miss occurs and the CPU must fetch the item from a slower source of data. To minimize the impact of cache misses on CPU performance, modern CPUs use a variety of sophisticated caching strategies, such as prefetching and multi-level caching, to ensure that frequently accessed data is stored in the cache and that cache misses are minimized.
