@@ -1,1 +1,22 @@
 It is the amount of indirect resources (computation time/ memory/ bandwidth)that are required to perform a specific task.
+
+How overhead work
+
+Overhead in system design refers to the additional resources, such as time, memory, or processing power, that are required to support a particular feature or functionality in a system. In general, overhead is considered to be a negative aspect of system design, as it can increase the cost and complexity of a system and reduce its overall performance.
+
+However, in some cases, overhead can be necessary to achieve certain goals or requirements of a system. For example, in a distributed system, some amount of overhead may be required to ensure fault tolerance and data consistency across multiple nodes. Similarly, in a security-sensitive application, some amount of overhead may be necessary to encrypt and decrypt sensitive data.
+
+One important application of overhead in system design is in the context of scaling. As a system grows in size and complexity, it may become necessary to add additional layers of overhead to ensure that the system remains performant and scalable. For example, adding caching layers or load balancing mechanisms can help to distribute the load across multiple servers and reduce the overall overhead of a system.
+
+Another application of overhead in system design is in the context of software engineering. As software systems become larger and more complex, it may become necessary to add additional layers of abstraction or complexity to help manage the complexity of the codebase. For example, using design patterns or abstraction layers can help to reduce the complexity of a codebase and make it easier to maintain and extend over time.
+
+Overall, overhead in system design is a complex and nuanced concept, and its application will depend on the specific requirements and goals of a particular system. While overhead is generally considered to be a negative aspect of system design, it can also be a necessary and beneficial component of a well-designed system.
+Overhead and its application
+
+Overhead in system design can work in different ways depending on the specific context and requirements of the system. In general, overhead refers to the additional resources that are required to support a particular feature or functionality in a system. This can include additional time, memory, processing power, or other resources.
+
+One common example of overhead in system design is caching. Caching is a technique used to store frequently accessed data in memory, so that it can be accessed more quickly than if it were stored on disk. While caching can improve the performance of a system by reducing the time required to access frequently accessed data, it also requires additional memory to store the cached data, which can increase the overall memory overhead of the system.
+
+Another example of overhead in system design is fault tolerance. Fault tolerance refers to the ability of a system to continue operating in the event of a failure or error. To achieve fault tolerance, it may be necessary to duplicate data or processes across multiple nodes in a distributed system. While this duplication can improve the overall reliability of the system, it also requires additional processing power and memory to manage the duplication, which can increase the overall overhead of the system.
+
+Overall, overhead in system design can be a complex and nuanced concept, and its application will depend on the specific requirements and goals of a particular system. In general, overhead is considered to be a trade-off between performance and functionality, and it is up to the system designer to determine the optimal level of overhead for a given system.
