@@ -1,3 +1,0 @@
-Similar to Consistent hashing, it is a hashing strategy that minimizes the remapping of keys to values when a hash table is resized.
-Following this strategy, a client weighs the available servers and sends requests to the one with the highest weight.
-If this server is down, the client will send requests to the server with the next highest weight.

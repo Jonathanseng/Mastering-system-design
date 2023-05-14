@@ -1,0 +1,40 @@
+Similar to Consistent hashing, it is a hashing strategy that minimizes the remapping of keys to values when a hash table is resized.
+Following this strategy, a client weighs the available servers and sends requests to the one with the highest weight.
+If this server is down, the client will send requests to the server with the next highest weight.
+
+How RHRWH work?
+
+Rendezvous Highest Random Weight (HRW) hashing is a distributed hashing algorithm that assigns data items to nodes in a cluster based on the combination of their key and the weight of each node. Here's how it works:
+
+Each node in the cluster is assigned a random weight. This weight is used to represent the capacity or performance of the node.
+
+When a new data item needs to be assigned to a node, the item's key is hashed.
+
+The hash of the item's key is then combined with the weight of each node in the cluster. This is typically done by concatenating the hash with the node's weight and hashing the result.
+
+For each node, the resulting hash value is calculated and compared to the highest hash value seen so far. If the current node's hash value is higher than the highest hash value seen so far, the item is assigned to that node.
+
+Once all nodes have been considered, the data item is assigned to the node with the highest resulting hash value.
+
+If a node is added or removed from the cluster, the weights of the remaining nodes will need to be adjusted. This ensures that the distribution of data items remains even across all nodes in the cluster.
+
+HRW hashing has several advantages over other distributed hashing algorithms, such as consistent hashing. In particular, HRW hashing tends to produce a more even distribution of data across nodes, since it takes into account the relative performance or capacity of each node. Additionally, HRW hashing can be more efficient than other algorithms, since it only requires a single hash operation per data item.
+
+However, HRW hashing also has some disadvantages. In particular, it can be more difficult to implement and maintain than other algorithms, since it requires each node in the cluster to maintain a list of weights for all other nodes. Additionally, HRW hashing can be less flexible than other algorithms, since it may not be able to adapt to changing cluster topologies or data access patterns.
+
+Application of RHRWH
+
+
+Rendezvous hashing is a distributed hashing algorithm used to evenly distribute data across a cluster of nodes. In this algorithm, data items are hashed based on a combination of their key and the identity of each node in the cluster. The result is that each data item is assigned to a specific node in the cluster, which reduces the amount of communication needed between nodes and improves overall performance.
+
+One variant of rendezvous hashing is called Highest Random Weight (HRW) hashing. In this variant, each node in the cluster is assigned a random weight, and the hash of each data item is computed by concatenating the item's key with each node's weight and hashing the result. The data item is then assigned to the node with the highest resulting hash value.
+
+HRW hashing has several applications in distributed systems, such as load balancing and data replication. Here are a few examples:
+
+Load balancing: In a distributed system with multiple servers, HRW hashing can be used to distribute incoming requests evenly across the servers. Each request is hashed using the weights of all available servers, and the request is then routed to the server with the highest resulting hash value. This ensures that each server receives an equal share of the workload.
+
+Data replication: In a distributed database system, data can be replicated across multiple nodes to improve availability and durability. HRW hashing can be used to determine which node(s) should store a given data item. Each data item is hashed using the weights of all available nodes, and the item is then replicated to the node(s) with the highest resulting hash value. This ensures that each data item is replicated to the nodes with the greatest capacity to store and serve it.
+
+Consistent hashing: HRW hashing can be used in conjunction with consistent hashing to improve the efficiency of data lookups in a distributed cache or key-value store. Consistent hashing ensures that when a new node is added or removed from the cluster, only a small fraction of the data needs to be remapped to different nodes. HRW hashing is used to map data items to nodes in the cluster, ensuring that each item is assigned to the node with the highest capacity to serve it.
+
+Overall, HRW hashing is a useful technique for improving the performance and scalability of distributed systems, particularly in cases where data needs to be evenly distributed across multiple nodes in a cluster.
