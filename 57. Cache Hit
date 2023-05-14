@@ -1,1 +1,29 @@
 It is when the response to a client’s request is found in the server cache.
+
+How cache hit work
+
+A cache hit occurs when a requested item is found in the cache memory, and the system can retrieve it quickly without the need to fetch it from a slower source of data. Here's an overview of how cache hits work:
+
+When a system receives a request for data, it first checks if the data is present in the cache memory.
+
+If the data is present in the cache memory, a cache hit occurs. The system retrieves the data from the cache, and the request is fulfilled quickly.
+
+If the data is not present in the cache memory, a cache miss occurs, and the system must fetch the data from a slower source, such as main memory or disk storage.
+
+Once the data is fetched from the slower source, it is stored in the cache memory so that it can be retrieved quickly the next time it is requested.
+
+Cache hits can have a significant impact on system performance, as retrieving data from cache is much faster than fetching data from a slower source such as main memory or disk storage. Systems can be optimized to maximize cache hits by using various strategies, such as increasing the size of the cache, using multiple levels of caching, and optimizing cache replacement policies to ensure that frequently accessed data is stored in the cache.
+
+Cache hit and its application
+
+Cache hits are an important concept in computer architecture and system design, as they are a critical factor in determining the performance of systems that use caching. Here are some applications and benefits of cache hits:
+
+Faster data access: Cache hits allow data to be accessed more quickly than if it were retrieved from a slower source, such as main memory or disk storage. This can lead to faster system performance and reduced latency.
+
+Improved system throughput: When cache hits occur frequently, the overall throughput of the system can be improved. This is because data can be retrieved and processed more quickly, allowing more work to be done in a given amount of time.
+
+Reduced power consumption: When data is retrieved from cache memory, less energy is consumed than when data is retrieved from a slower source, such as main memory or disk storage. This can lead to reduced power consumption and longer battery life in mobile devices.
+
+Improved scalability: Caching can improve the scalability of systems by reducing the load on slower data sources, such as main memory or disk storage. This can allow more users or applications to be supported by the system without reducing performance.
+
+Overall, cache hits are a critical factor in determining the performance and efficiency of systems that use caching, and optimizing cache hits can lead to significant improvements in system performance and scalability.
