@@ -1,2 +1,37 @@
 A database that relies on RAM to store and access data. These allow operations that are much faster than traditional databases that use data storage on disk.
 For example, Redis and SQLite.
+
+How in memory work
+
+In-memory databases work by storing all the data in the memory of the computer, rather than on disk. This means that when data is needed, it can be accessed much more quickly than with a traditional disk-based database.
+
+Here's a high-level overview of how an in-memory database works:
+
+Data is loaded into memory: When an in-memory database is started, it loads all the data from disk into memory. This can take some time, but once the data is loaded, it can be accessed much more quickly than with a disk-based database.
+
+Data is stored in memory: Once the data is loaded into memory, it is stored in a data structure that is optimized for quick access. For example, an in-memory database might use a hash table or a B-tree to store the data.
+
+Data is accessed using queries: To retrieve data from an in-memory database, you use a query language or an API to specify what data you want to retrieve. The database then searches its data structures to find the requested data and returns it to the caller.
+
+Data is updated in memory: When data is updated, the in-memory database updates its data structures to reflect the changes. This means that all subsequent queries will see the updated data.
+
+Data is persisted to disk: In-memory databases often have a feature that allows data to be persisted to disk periodically, in case the database is shut down or the computer crashes. This ensures that data is not lost in the event of a failure.
+
+Overall, in-memory databases provide much faster access to data than disk-based databases, but they require more memory to store the data. They are well-suited for applications that require high performance and low latency, and they are often used in real-time systems where data needs to be processed quickly.
+in memory database and its application
+
+An in-memory database is a type of database that stores data in memory instead of on disk. This makes it much faster than traditional disk-based databases, since data can be accessed and processed more quickly. In-memory databases are often used in applications that require high performance and low latency, such as financial trading systems, real-time analytics, and gaming.
+
+Here are some examples of applications of in-memory databases:
+
+Financial trading systems: In-memory databases are commonly used in financial trading systems to quickly process large amounts of real-time data. By storing data in memory, these systems can perform complex calculations and analysis much more quickly than traditional disk-based databases.
+
+Real-time analytics: In-memory databases are often used for real-time analytics of streaming data. Data can be ingested and processed in real-time, allowing organizations to make faster decisions based on up-to-date information.
+
+Gaming: In-memory databases are also used in gaming applications to store and retrieve game state data in real-time. This allows games to quickly respond to player actions and provide a more immersive gaming experience.
+
+Web applications: In-memory databases are sometimes used in web applications to cache frequently accessed data. This can help improve the performance of the application by reducing the number of database queries that need to be performed.
+
+Machine learning: In-memory databases are also used in machine learning applications to store and manipulate large datasets. By storing data in memory, machine learning algorithms can process data more quickly, leading to faster model training and more accurate predictions.
+
+Overall, in-memory databases are useful for any application that requires high performance and low latency. They are particularly well-suited for applications that process large amounts of data in real-time, where even small delays can have a significant impact on performance.
