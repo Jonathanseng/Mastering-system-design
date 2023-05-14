@@ -1,3 +1,39 @@
 It is the process of partitioning a database into multiple small
 units called Shards.
 This strategy horizontally scales and increases the throughput of a database.
+
+How database sharding work?
+
+Database sharding works by horizontally partitioning data across multiple servers, with each server (or shard) containing a subset of the data. This allows a large, high-traffic database to be scaled horizontally by distributing the workload among multiple servers.
+
+The process of database sharding typically involves the following steps:
+
+Data partitioning: The database is partitioned into smaller, more manageable pieces, called shards. Each shard contains a subset of the data, and the partitioning is typically done based on some criteria, such as user ID, geographic location, or time period.
+
+Shard distribution: Each shard is stored on a separate server, with multiple servers forming a shard cluster. The shard distribution can be done manually or through an automated process that takes into account the current server load, the number of shards, and other factors.
+
+Data replication: To ensure data availability and fault tolerance, each shard is typically replicated across multiple servers. This means that if one server fails, another server can take over, ensuring that data is always available.
+
+Distributed query processing: To retrieve data from the database, queries are sent to all the shards that contain the relevant data. The results are then combined and returned to the user. This requires a distributed query processing system that can route queries to the appropriate shards and combine the results.
+
+Database sharding can improve database performance and scalability by distributing the workload across multiple servers, allowing more data to be processed and served faster. However, it also requires careful planning and management to ensure that the data is partitioned correctly and that queries are executed efficiently across multiple servers.
+
+Database sharding and its application
+
+Database sharding is a technique used in distributed database systems to horizontally partition data across multiple servers. The goal of sharding is to improve the scalability and performance of large, high-traffic databases by distributing the workload among multiple servers.
+
+Sharding involves breaking up a large database into smaller, more manageable pieces called shards. Each shard is stored on a separate server and contains a subset of the data. Sharding typically involves partitioning the data based on some criteria, such as user ID, geographic location, or time period.
+
+The benefits of database sharding include:
+
+Improved scalability: Sharding allows a database to scale horizontally by adding more servers to handle increased traffic and data volume.
+
+Increased performance: By distributing data across multiple servers, queries can be processed faster, and response times can be improved.
+
+Improved fault tolerance: If one server fails, only a portion of the data will be affected, and the remaining servers can continue to serve requests.
+
+Reduced costs: Sharding can be a more cost-effective solution than scaling up a single server to handle increasing traffic and data volume.
+
+Database sharding is commonly used in web applications, where high traffic volumes and large data sets are common. Sharding is also used in other applications, such as data warehousing and analytics, where large data sets need to be processed quickly.
+
+To implement database sharding, a number of tools and techniques are available, such as the use of a sharding middleware layer, database replication, and distributed query processing. However, implementing sharding can be complex and requires careful planning to ensure that the data is partitioned correctly and that queries are executed efficiently across multiple servers.
