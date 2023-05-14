@@ -1,3 +1,37 @@
 A database that uses the graph data structure and stores data with its associated properties into nodes and its relationships into edges.
 A popular graph database is Neo4j.
 It uses Cypher, which is a graph-optimized query language for database 
+
+How graph database work
+
+Graph databases work by storing data in the form of nodes and edges, which are used to represent entities and relationships between them, respectively. Here's a high-level overview of how a graph database works:
+
+Data is represented as a graph: In a graph database, data is represented as a graph of nodes and edges, where nodes represent entities and edges represent relationships between them. For example, in a social network, nodes might represent users, and edges might represent friend connections between users.
+
+Data is stored in a database: The graph data is stored in a database, which can be a dedicated graph database system or a general-purpose database that supports graph data structures.
+
+Data is queried using a graph query language: To retrieve data from a graph database, you use a graph query language such as Cypher or SPARQL to specify what data you want to retrieve. The query language allows you to navigate the graph and specify conditions for the nodes and edges you want to retrieve.
+
+Data is updated using graph operations: Graph databases support operations for adding, updating, and deleting nodes and edges in the graph. For example, you might add a new user node to the graph and create an edge to represent a friend connection to an existing user node.
+
+Data is optimized for graph traversal: Graph databases are optimized for traversing the graph efficiently, using algorithms such as breadth-first search or depth-first search. This makes it possible to perform complex queries and analyze relationships between entities in the graph.
+
+Overall, graph databases provide a flexible and powerful way to model complex relationships between data. They are well-suited for applications that require analyzing relationships between entities, such as social networks, recommendation engines, and knowledge graphs.
+
+Graph database and its application
+
+A graph database is a type of database that stores data in the form of nodes and edges, which are used to represent entities and relationships between them, respectively. Graph databases are useful for modeling complex relationships between data, and are commonly used in applications such as social networks, recommendation engines, and knowledge graphs.
+
+Here are some examples of applications of graph databases:
+
+Social networks: Graph databases are commonly used in social networks to model relationships between users, such as friend connections, group memberships, and message exchanges. By representing this data as a graph, social networks can perform complex queries to identify common interests, recommend new connections, and detect potential fraud or spam.
+
+Recommendation engines: Graph databases are also used in recommendation engines to model relationships between users and items, such as products, movies, or music. By analyzing the graph of user-item interactions, recommendation engines can identify patterns and make personalized recommendations to individual users.
+
+Knowledge graphs: Graph databases are often used in knowledge graphs, which model relationships between concepts and entities in a domain-specific knowledge base. Knowledge graphs are useful for tasks such as semantic search, question answering, and natural language processing.
+
+Logistics and supply chain management: Graph databases are also used in logistics and supply chain management to model relationships between nodes in a network, such as shipping routes, warehouses, and customers. By analyzing the graph of these relationships, companies can optimize their logistics operations to reduce costs and improve delivery times.
+
+Fraud detection: Graph databases are also used in fraud detection applications to model relationships between entities and detect anomalous patterns. By analyzing the graph of financial transactions, for example, fraud detection algorithms can identify potential cases of money laundering, identity theft, or other fraudulent activities.
+
+Overall, graph databases are useful for any application that requires modeling complex relationships between data. They are particularly well-suited for applications that involve social networks, recommendation engines, knowledge graphs, logistics, and fraud detection.
