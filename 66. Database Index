@@ -1,2 +1,45 @@
 It is a database structure that helps perform faster searches and filtering on a database.
 Read more about database indexes here:
+
+How database index work>?
+
+A database index works by creating a separate data structure that contains a subset of the data from a database table, organized in a way that makes it easy to search and sort. The index contains a copy of the indexed column(s) and a reference to the original row in the table, allowing the database to quickly locate the requested data.
+
+When a query is executed on a table with an index, the database first checks the index for the requested data. If the data is found in the index, the database can use the reference to retrieve the corresponding row(s) from the table. This process is much faster than searching the entire table for the requested data.
+
+Here's an example to illustrate how a database index works:
+
+Let's say you have a database table with 1 million rows and you want to find all rows where the value in the "last_name" column is "Smith". Without an index, the database would need to search through every row in the table to find the matching rows, which could take a long time.
+
+However, if you create an index on the "last_name" column, the database can use the index to quickly locate the rows where the value is "Smith". The index might look something like this:
+
+Last Name	Row Reference
+Adams	1
+Brown	2
+Smith	3
+Smith	4
+Smith	5
+...	...
+When you execute a query for rows with "last_name" = "Smith", the database would search the index for all rows where "last_name" = "Smith". The index would return the row references for rows 3, 4, and 5. The database can then use these row references to retrieve the corresponding rows from the table.
+
+While indexes can significantly improve query performance, they also have some downsides. Indexes take up disk space and can slow down data insertion and update operations, so it's important to carefully consider the appropriate use of indexes and to periodically review and optimize your index strategy to ensure that it continues to meet your performance and scalability requirements.
+
+Database index and its application
+
+A database index is a data structure that improves the speed of data retrieval operations on a database table. An index contains a copy of a subset of the data from a table, organized in a way that makes it easy to search and sort.
+
+When you create an index on a database table, you are essentially creating a roadmap that the database can use to quickly find specific data within that table. Without an index, the database would need to search through every row of the table to find the requested data, which can be very slow and resource-intensive.
+
+Here are some common applications of database indexes:
+
+Improving query performance: By creating indexes on frequently queried columns, you can significantly improve the speed of query execution.
+
+Enforcing uniqueness: By creating a unique index on a column or set of columns, you can ensure that the data in that column or set of columns is unique across the table.
+
+Enforcing referential integrity: By creating an index on a foreign key column, you can ensure that the foreign key references a valid row in the parent table.
+
+Sorting data: By creating an index on a column or set of columns that you frequently sort data by, you can speed up the sorting process.
+
+Searching for data: By creating a full-text index, you can enable users to search for data within text fields.
+
+Database indexes can significantly improve the performance of database queries and operations, but they also have some downsides. Indexes take up disk space and can slow down data insertion and update operations, so it's important to carefully consider the appropriate use of indexes and to periodically review and optimize your index strategy to ensure that it continues to meet your performance and scalability requirements.
