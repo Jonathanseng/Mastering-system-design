@@ -1,2 +1,38 @@
 It is a process where different nodes in a multi-node system agree to reach a common conclusion.
 Nodes in distributed systems use algorithms such as Paxos and Raft to reach consensus.
+
+
+How consensus work?
+
+Consensus in system design involves reaching agreement among multiple stakeholders or participants on the design and implementation of a system. Here are some steps that can help facilitate the consensus-building process:
+
+Identify stakeholders: Identify all stakeholders who are involved or affected by the system design. This may include developers, project managers, end-users, customers, and other parties who have a stake in the system.
+
+Define the problem: Clearly define the problem that the system is intended to solve, and make sure that all stakeholders have a shared understanding of the problem and its scope.
+
+Generate ideas: Encourage all stakeholders to contribute ideas for how the system should be designed and implemented. This can be done through brainstorming sessions, design workshops, or other collaborative exercises.
+
+Evaluate ideas: Evaluate each idea based on its feasibility, impact, and alignment with the goals of the system. Identify areas of agreement and disagreement among the stakeholders.
+
+Prioritize ideas: Prioritize the ideas that have the greatest potential to meet the goals of the system, and develop a consensus around which ideas should be implemented.
+
+Develop a plan: Develop a plan for implementing the ideas that have been prioritized, and identify roles and responsibilities for each stakeholder involved in the implementation process.
+
+Test and iterate: Test the system as it is being implemented, and use feedback from end-users and stakeholders to iterate and improve the system.
+
+Throughout this process, it is important to encourage open communication and collaboration among all stakeholders. Facilitators can help to ensure that everyone has a chance to contribute ideas and that the discussion remains focused on the goals of the system. Ultimately, the goal of consensus-building in system design is to create a system that meets the needs of all stakeholders and is more likely to be successful in the long-term.
+
+Consensus and its application:
+
+Consensus in system design is an important concept with a wide range of applications in various fields, including software development, product design, and project management. Here are some examples of how consensus in system design can be applied:
+
+Agile software development: Agile development methodologies, such as Scrum and Kanban, rely on frequent collaboration and communication among the development team, stakeholders, and end-users to ensure that the system is designed and implemented to meet the needs of all parties involved. The agile development process emphasizes iterative development and continuous feedback, which can help facilitate consensus-building and ensure that the system is designed to meet the evolving needs of the stakeholders.
+
+Product design: In product design, consensus-building is important to ensure that the product meets the needs of the target audience. Product designers often use user research and testing to gather feedback from end-users and stakeholders, which can help facilitate consensus-building and ensure that the product is designed to meet the needs of the users.
+
+Project management: Consensus-building is also important in project management, particularly when managing complex projects with multiple stakeholders. By involving all stakeholders in the project planning process and seeking their input on project goals, timelines, and budgets, project managers can help build consensus around project objectives and ensure that the project is designed to meet the needs of all parties involved.
+
+Community development: Consensus-building is also important in community development, particularly when developing plans for public spaces or infrastructure projects. By involving members of the community in the design process and seeking their input on project goals and design decisions, community leaders can help build consensus around project objectives and ensure that the project is designed to meet the needs of the community.
+
+Overall, consensus in system design is important in ensuring that systems, products, and projects are designed and implemented to meet the needs of all stakeholders involved. By involving all stakeholders in the design process and seeking their input on project goals, design decisions, and implementation strategies, designers and project managers can help build consensus and increase the likelihood of project success.
+
