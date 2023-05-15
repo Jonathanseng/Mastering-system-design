@@ -1,4 +1,0 @@
-It is an extension of the CAP Theorem.
-It states that:
-!"In the case of network partitioning (P), a system can only ensure availability (A) or consistency (C ) (CAP theorem)
-!"Else (E), in case of no network partitioning, a system can only ensure latency (L) or consistency (C )
