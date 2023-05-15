@@ -1,4 +1,36 @@
 It states that a distributed database can only ensure two of the three:
-!"Consistency
-!"Availability
-!"Partition Tolerance: It is the ability of a database cluster to continue to work even in the case of a network partition.
+
+1. Consistency
+
+2. Availability
+
+3. Partition Tolerance: It is the ability of a database cluster to continue to work even in the case of a network partition.
+
+How it work?
+
+The CAP theorem describes the fundamental trade-offs that must be made when designing a distributed system. The theorem states that in a distributed system, it is impossible to simultaneously guarantee all three of the following properties: consistency, availability, and partition tolerance.
+
+Consistency means that all nodes in the system see the same data at the same time, regardless of which node they are communicating with. This is typically achieved through mechanisms like locking or replication, which ensure that all nodes in the system have access to the most up-to-date version of the data.
+
+Availability means that all non-failing nodes in the system can respond to read and write requests in a reasonable amount of time. This is typically achieved through mechanisms like load balancing and replication, which ensure that multiple nodes can handle incoming requests in case one node fails or becomes unavailable.
+
+Partition tolerance means that the system continues to function even when network connections between nodes are lost or delayed. This is typically achieved through mechanisms like replication and distributed consensus algorithms, which ensure that the system can continue to operate even when some nodes are unable to communicate with each other.
+
+The CAP theorem states that in a distributed system, it is impossible to simultaneously guarantee all three of these properties. In other words, a distributed system can only provide two out of the three guarantees at any given time. This is because achieving all three guarantees would require unlimited resources and unlimited communication bandwidth, which are not possible in practice.
+
+As a result, system designers must choose which two of these guarantees to prioritize based on the specific needs of their application. For example, a financial system that processes transactions may prioritize consistency and partition tolerance over availability, while a social media platform may prioritize availability and partition tolerance over consistency. The choice of which guarantees to prioritize depends on the specific trade-offs that are acceptable for the given application.
+
+Its application:
+
+The CAP theorem, also known as Brewer's theorem, is a fundamental concept in distributed system design that states that it is impossible for a distributed system to simultaneously provide all three of the following guarantees:
+
+Consistency: Every read operation receives the most recent write or an error.
+Availability: Every non-failing node returns a response to a read or write request in a reasonable amount of time.
+Partition tolerance: The system continues to function even when communication between nodes is lost or delayed.
+In other words, a distributed system can only guarantee two out of the three properties at any given time.
+
+The CAP theorem has important implications for system designers, as it highlights the trade-offs that must be made when designing a distributed system. For example, a system that prioritizes consistency and partition tolerance may sacrifice availability, while a system that prioritizes availability and partition tolerance may sacrifice consistency.
+
+One practical application of the CAP theorem is in the design of distributed databases. For example, a database that prioritizes consistency over availability may use a synchronous replication scheme, where writes are only considered successful once they have been replicated to all nodes in the system. On the other hand, a database that prioritizes availability over consistency may use an asynchronous replication scheme, where writes are considered successful as soon as they have been replicated to a subset of nodes.
+
+Ultimately, the choice of which properties to prioritize in a distributed system depends on the specific needs of the application being built.
