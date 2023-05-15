@@ -1,2 +1,33 @@
 It is a database that is optimized to store binary large objects.
 Examples of this are Amazon S3, Google Cloud Storage & Azure Blob Storage.
+
+How it work?
+
+Blob storage is a type of cloud-based storage service that is optimized for storing and managing unstructured data. Here is how Blob storage works:
+
+Data is uploaded to Blob storage: Users can upload their unstructured data, such as text or binary data, to Blob storage via a REST API or one of the client libraries provided by the cloud service provider. The data is stored in a container within the Blob storage account.
+
+Data is organized into containers: Blob storage is organized into containers, which are essentially a logical grouping of objects. Containers can be thought of as a kind of virtual folder that holds objects. Users can create and delete containers, and can set access policies and metadata for each container.
+
+Objects are identified by a URL: Each object in Blob storage is identified by a unique URL that includes the container name and the object name. This URL can be used to retrieve or modify the object.
+
+Data can be accessed and managed: Once data is stored in Blob storage, it can be accessed and managed through a variety of means. Users can download or stream data directly from Blob storage, or they can use a CDN to distribute data more efficiently. Users can also manage access to the data using role-based access control or other security measures.
+
+Data is replicated for durability: Blob storage typically provides replication options that allow users to choose how many copies of their data are stored and where those copies are located. This provides high durability and availability, as well as protection against data loss due to hardware failures, natural disasters, or other unexpected events.
+
+Overall, Blob storage provides a scalable and cost-effective way to store and manage unstructured data in the cloud. It is commonly used for applications such as backup and archiving, media storage and streaming, and web content management.
+Its application:
+
+Blob storage is a cloud-based storage service that is optimized for storing and managing unstructured data such as text or binary data like images, videos, documents, and other media files. Here are some of the applications of Blob storage:
+
+Backup and disaster recovery: Blob storage provides a cost-effective way to store backups of critical data in the cloud. The replication options provided by Blob storage ensure that data is highly durable and available even in the event of hardware failures, natural disasters, or other unexpected events.
+
+Media storage and streaming: Blob storage is often used to store and stream media files such as videos, music, and images. The integration with a CDN (Content Delivery Network) ensures fast and efficient delivery of media to end-users across the globe.
+
+Web content management: Blob storage is commonly used to store and manage web content such as HTML, CSS, and JavaScript files. This enables websites to be scaled up or down easily based on demand, and also provides a way to store and manage large amounts of media files.
+
+IoT data storage: Blob storage can also be used to store and manage data from IoT (Internet of Things) devices. This data can be analyzed in real-time or stored for later analysis, providing insights into device performance and usage patterns.
+
+Machine learning and analytics: Blob storage can be used to store and manage large amounts of data for machine learning and analytics applications. This data can be used to train machine learning models or perform data analysis to generate insights and predictions.
+
+Overall, Blob storage provides a scalable and cost-effective way to store and manage unstructured data in the cloud. Its flexibility and durability make it a popular choice for a wide range of applications in various industries.
