@@ -1,0 +1,47 @@
+Availability is measured in nines (9).
+A system with 90% availability (‘one nine’) will have a downtime of 36.53 days per year.
+A system with 99% availability (‘two nines’) will have a downtime of 3.65 days per year.
+A highly available system is defined as one with an availability of 99.999% (‘five nines’) or more with a downtime of 5.26 minutes per year.
+
+
+How it works?
+
+In system design, achieving high availability is an important goal, especially for critical systems and services. Availability is usually measured as a percentage of time that a system is expected to be operational and accessible to users. Specifically, "availability in nine" refers to the number of nines used to express availability.
+
+For example, "three nines availability" means that the system is expected to be operational and accessible for 99.9% of the time, which translates to a downtime of 8.76 hours per year. "Five nines availability" means that the system is expected to be operational and accessible for 99.999% of the time, which translates to a downtime of only 5.26 minutes per year.
+
+Achieving high availability in system design involves several techniques, including:
+
+Redundancy: This involves having backup systems or components that can take over in case of a failure. For example, a web server can have multiple replicas in different locations to ensure that users can always access the service.
+
+Fault tolerance: This involves designing the system to be resilient to failures. For example, a database can have a master-slave replication setup to ensure that data is not lost in case of a failure.
+
+Failover: This involves automatically switching to a backup system or component in case of a failure. For example, a load balancer can detect when a web server is down and automatically redirect traffic to a backup server.
+
+Monitoring: This involves continuously monitoring the system to detect failures and performance issues. This allows the system to be proactively maintained and avoids unexpected downtime.
+
+Capacity planning: This involves planning for future growth and ensuring that the system can handle increased demand. This avoids overloading the system, which can lead to performance issues and downtime.
+
+Overall, achieving high availability in system design requires a combination of these techniques and careful planning to ensure that the system is always operational and accessible to users.
+
+Its application
+
+"Availability in nine" is a metric used to express the availability of a system or service, measured as a percentage of time that it is expected to be operational and accessible to users. Specifically, it refers to the number of nines used to express availability. For example, "five nines availability" means that the system is expected to be operational and accessible for 99.999% of the time, which translates to a downtime of only 5.26 minutes per year.
+
+The application of availability in nine is relevant in many industries, particularly in technology, where high availability is a critical requirement for mission-critical systems and services. For example:
+
+Cloud computing: Cloud providers offer different levels of availability, typically ranging from three to five nines, to meet the needs of different customers. High availability is particularly important for cloud-based applications that are used by a large number of users.
+
+E-commerce: Online retailers require high availability to ensure that their websites are always accessible to customers. Even a few minutes of downtime can result in lost revenue and customer dissatisfaction.
+
+Telecommunications: Telecommunications companies require high availability for their networks and services, such as mobile and fixed-line networks, to ensure that their customers can always make and receive calls and access the internet.
+
+Banking and finance: Financial institutions require high availability for their trading systems, transaction processing systems, and ATMs to ensure that they can handle large volumes of transactions and provide reliable services to their customers.
+
+Healthcare: Healthcare providers require high availability for their electronic health record systems, medical imaging systems, and other critical systems to ensure that patient care is not disrupted.
+
+In all these industries, achieving high availability requires careful system design, including redundancy, fault tolerance, failover mechanisms, and proactive monitoring and maintenance. The application of availability in nine provides a clear target for system designers and operators to work towards, ensuring that their systems and services meet the high availability requirements of their customers.
+
+
+
+
