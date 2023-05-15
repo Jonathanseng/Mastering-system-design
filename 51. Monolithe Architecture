@@ -1,1 +1,29 @@
 A type of software architecture where all the functions performed by a software application are deployed as a single unified unit.
+
+How it work
+
+Monolithic architecture is a traditional software architecture style where all the components of an application are combined into a single executable file or a single codebase. In a monolithic architecture, the application is typically organized into modules, but all the modules are deployed as a single unit.
+
+In a monolithic architecture, all the components of the application are tightly coupled and communicate with each other through function calls or shared memory. This can make it easier to develop and test the application, as all the components are in one place and the developers have full control over the application codebase.
+
+However, as the application grows larger and more complex, maintaining a monolithic architecture can become difficult. It can be challenging to make changes to one part of the application without affecting other parts, and deploying updates can require downtime for the entire application. Additionally, scaling the application can be challenging, as all the components must be scaled together.
+
+To address these issues, many modern applications are built using a microservices architecture. In a microservices architecture, the application is broken down into smaller, independent services that communicate with each other through APIs. This makes it easier to scale individual components of the application and deploy updates without downtime.
+
+However, migrating from a monolithic architecture to a microservices architecture can be a complex and time-consuming process, and it may not be necessary for all applications. In some cases, a monolithic architecture may be sufficient for the needs of the application, especially for smaller applications or applications with less complex requirements.
+
+Its application:
+
+Monolithic architecture is a software architecture style where all the components of an application are combined into a single executable file or a single codebase. Monolithic architecture is still widely used, especially for small to medium-sized applications, due to its simplicity and ease of deployment.
+
+Here are some examples of applications where a monolithic architecture might be appropriate:
+
+Small to medium-sized web applications: If the web application is relatively small and has a simple architecture, a monolithic architecture can be sufficient. This is because the application is easier to develop and maintain when all the components are in one place.
+
+Applications with low traffic: If the application has low traffic, a monolithic architecture can be sufficient. This is because the application does not require the scalability and resilience provided by a microservices architecture.
+
+Legacy applications: Many legacy applications are built using a monolithic architecture. Rebuilding these applications using a microservices architecture can be complex and time-consuming, and may not be worth the effort.
+
+However, there are also limitations to a monolithic architecture. For example, as the application grows larger and more complex, maintaining a monolithic architecture can become difficult. It can be challenging to make changes to one part of the application without affecting other parts, and deploying updates can require downtime for the entire application. Additionally, scaling the application can be challenging, as all the components must be scaled together.
+
+Overall, whether to use a monolithic architecture or a microservices architecture depends on the specific needs of the application. For smaller applications with simple architectures and low traffic, a monolithic architecture may be sufficient. However, for larger, more complex applications that require scalability and resilience, a microservices architecture may be necessary.
