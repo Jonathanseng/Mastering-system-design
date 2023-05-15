@@ -1,1 +1,40 @@
 It is the probability of a system running and doing what it is intended to do / uptime.
+
+How it work
+
+In the context of computer systems, availability refers to the ability of a system to provide services to its users or clients without interruption or downtime. In other words, it is a measure of how reliable a system is in terms of its ability to remain operational and accessible to users.
+
+Here are some of the key factors that affect the availability of a system:
+
+Hardware failures: This includes failures of the servers, storage devices, network infrastructure, and other hardware components that make up the system.
+
+Software failures: This includes bugs, errors, and other issues in the software that runs on the system.
+
+Human errors: This includes mistakes made by the system administrators, developers, and other personnel responsible for maintaining the system.
+
+Security incidents: This includes hacking attempts, malware infections, and other security threats that can compromise the availability of the system.
+
+To ensure high availability, system architects and administrators use a variety of techniques and strategies, including:
+
+Redundancy: This involves using multiple copies of critical components, such as servers, storage devices, and network connections, so that if one fails, the system can continue to operate using the redundant components.
+
+Load balancing: This involves distributing the workload across multiple servers or other resources, so that if one becomes overloaded or fails, the other resources can take over the workload.
+
+Monitoring and alerting: This involves using tools and processes to monitor the system for potential issues or failures, and alerting system administrators or other personnel when problems are detected.
+
+Disaster recovery and business continuity planning: This involves creating plans and procedures for how to recover from major outages or disasters, and ensuring that critical systems and data can be restored as quickly as possible.
+
+Overall, ensuring high availability is a critical aspect of designing and maintaining computer systems that can meet the needs of modern businesses and organizations. By implementing strategies like redundancy, load balancing, monitoring, and disaster recovery planning, system architects and administrators can help ensure that their systems remain operational and accessible to users, even in the face of unexpected events or challenges.
+its application:
+
+High availability is a critical requirement for many modern applications, particularly those that support business-critical operations or provide services to a large number of users. Here are a few examples of how availability is important in various application domains:
+
+E-commerce: Online shopping sites, such as Amazon or eBay, require high availability to ensure that customers can access the site and make purchases at any time. Downtime or slow response times can lead to lost sales and damage the reputation of the company.
+
+Banking and finance: Financial institutions require high availability to ensure that customers can access their accounts and perform transactions at any time. Downtime or errors can lead to financial losses and undermine the trust of customers.
+
+Healthcare: Electronic medical record (EMR) systems and other healthcare applications require high availability to ensure that healthcare providers can access patient information and make critical decisions in a timely manner. Downtime or slow response times can lead to delays in care or even patient harm.
+
+Transportation: Transportation systems, such as airline reservation systems or traffic management systems, require high availability to ensure that travelers can access information and make plans at any time. Downtime or errors can lead to lost revenue and frustrated customers.
+
+In each of these domains, high availability is critical to the success of the application and the organization that relies on it. Achieving high availability requires careful design and planning, including the use of redundant hardware and software components, load balancing, monitoring and alerting, and disaster recovery planning. By implementing these strategies, application architects and administrators can help ensure that their applications remain operational and accessible to users, even in the face of unexpected events or challenges.
