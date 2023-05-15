@@ -1,3 +1,40 @@
 A type of software architecture where all the functions
 performed by a software application are deployed as different independently functioning services.
 For example, Amazon can be divided into a shopping cart service, payments service, and inventory service that function independently and interact with each other.
+
+How it work
+
+Microservices architecture is a software architecture style where an application is built as a collection of small, independent, and loosely coupled services. Each service is self-contained and performs a specific function of the application. The services communicate with each other through well-defined APIs, typically using lightweight protocols like REST or message queues.
+
+In a microservices architecture, each service is responsible for a single business capability and can be developed, deployed, and scaled independently. This allows the application to be more flexible, scalable, and resilient than a monolithic architecture. Microservices can be written in different programming languages, use different data storage technologies, and run on different platforms.
+
+Here are the basic principles of microservices architecture:
+
+Decentralization: Each service is independent and has its own data storage, business logic, and user interface. This reduces the risk of a single point of failure and allows for more flexibility in development and deployment.
+
+Service boundaries: Each service has a clear and well-defined interface that defines how it interacts with other services. This allows services to be developed and deployed independently without affecting other parts of the application.
+
+Autonomous: Each service is responsible for its own data storage, business logic, and user interface. This allows each service to be developed and deployed independently and to be scaled horizontally.
+
+Resilience: Each service is designed to handle failures gracefully and to recover quickly. This allows the application to continue to function even if one or more services fail.
+
+Continuous delivery: Microservices are typically developed and deployed using continuous delivery practices, which allows for faster and more frequent updates to the application.
+
+In a microservices architecture, services communicate with each other using well-defined APIs. Each service can use its own technology stack and data storage, which allows for more flexibility in development and deployment. However, this also introduces additional complexity, as services must be monitored, tested, and deployed independently.
+
+Overall, microservices architecture is an approach to software architecture that allows for greater flexibility, scalability, and resilience than a monolithic architecture. It is particularly useful for large, complex applications that require frequent updates and must scale to handle high traffic loads.
+Its application:
+
+Microservices architecture has become increasingly popular in recent years due to its benefits in flexibility, scalability, and resilience. Some common applications of microservices architecture include:
+
+E-commerce: Microservices architecture is well-suited for e-commerce applications, which often require complex business logic and need to handle high volumes of traffic. By breaking an e-commerce application into small, independent services, developers can more easily update and scale the application as needed.
+
+Online Gaming: Online gaming applications require high scalability, real-time interactions, and low latency. Microservices architecture can help developers to build an application that can handle these requirements by breaking down the application into small, independently scalable services.
+
+Healthcare: Healthcare applications need to handle sensitive patient data and complex workflows. By using microservices architecture, developers can build an application that is secure, flexible, and can scale to meet the needs of different healthcare providers.
+
+Banking and Finance: Banking and finance applications require high security, complex business logic, and the ability to handle high volumes of transactions. By using microservices architecture, developers can build an application that is scalable, secure, and can handle the complex business logic of banking and finance applications.
+
+Social media: Social media applications require the ability to handle large volumes of data and traffic, as well as complex interactions between users. Microservices architecture can help developers to build an application that can handle these requirements by breaking the application into small, independently scalable services.
+
+Overall, microservices architecture is well-suited for complex applications that require flexibility, scalability, and resilience. By breaking an application into small, independent services, developers can more easily update and scale the application as needed, while also improving security, reliability, and resilience.
