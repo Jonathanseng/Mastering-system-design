@@ -1,0 +1,22 @@
+Here are some of the most popular API gateways:
+
+* **Amazon API Gateway:** Amazon API Gateway is a fully managed service that makes it easy to create, publish, maintain, monitor, and secure APIs at any scale.
+[Image of Amazon API Gateway logo]
+* **Azure API Management:** Azure API Management is a fully managed service that helps you build, secure, deploy, and manage APIs.
+[Image of Azure API Management logo]
+* **Google Cloud API Gateway:** Google Cloud API Gateway is a fully managed service that helps you create, publish, and manage APIs.
+[Image of Google Cloud API Gateway logo]
+* **Kong:** Kong is a popular open source API gateway that can be deployed on-premises or in the cloud.
+[Image of Kong logo]
+* **MuleSoft Anypoint Platform:** MuleSoft Anypoint Platform is a comprehensive API management platform that includes an API gateway, a development environment, and a management console.
+[Image of MuleSoft Anypoint Platform logo]
+* **IBM API Connect:** IBM API Connect is a fully managed API management platform that helps you build, secure, deploy, and manage APIs.
+[Image of IBM API Connect logo]
+* **WSO2 API Manager:** WSO2 API Manager is a comprehensive API management platform that includes an API gateway, a development environment, and a management console.
+[Image of WSO2 API Manager logo]
+* **Apigee Edge:** Apigee Edge is a comprehensive API management platform that includes an API gateway, a development environment, and a management console.
+[Image of Apigee Edge logo]
+* **Tyk API Gateway:** Tyk API Gateway is a popular open source API gateway that can be deployed on-premises or in the cloud.
+[Image of Tyk API Gateway logo]
+
+These are just a few of the many API gateways available. When choosing an API gateway, it is important to consider your specific needs and requirements.
